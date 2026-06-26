@@ -11,7 +11,7 @@ Allowed:
 - source policy;
 - validation scripts.
 
-## Private overlay
+## Private source repository
 
 Keep private:
 
@@ -21,6 +21,8 @@ Keep private:
 - subjective scores or preference weights;
 - non-official personal recommendations;
 - account-specific or session-specific URLs.
+
+The private source repository is `research-bookmarks`.
 
 ## Promotion gate
 

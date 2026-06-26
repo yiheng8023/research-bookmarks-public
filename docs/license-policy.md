@@ -6,7 +6,7 @@ Repository-owned taxonomy prose and documentation may be reused under CC BY 4.0 
 
 This policy does not grant rights to:
 
-- private bookmarks;
+- private bookmarks in `research-bookmarks`;
 - personal notes or browsing history;
 - third-party website content;
 - screenshots, logos, or trademarks;
