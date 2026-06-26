@@ -1,0 +1,56 @@
+{
+  "boundary": {
+    "private_source_repository": "research-bookmarks",
+    "public_projection_repository": "research-bookmarks-public",
+    "public_rule": "Only public-safe official or canonical sources are projected here.",
+    "resource_intelligence_repository": "resource-radar"
+  },
+  "category_counts": {
+    "00_workspace_common_entrypoints": 1,
+    "01_artificial_intelligence_computational_intelligence": 42,
+    "02_computer_science_software_engineering_information_systems": 35,
+    "03_data_graph_models_knowledge_organization": 21,
+    "04_mathematics_natural_sciences_foundational_research": 19,
+    "05_engineering_technology_hardware_industrial_systems": 25,
+    "06_medicine_health_life_sciences": 14,
+    "07_agriculture_environment_earth_systems": 7,
+    "08_history_geography_civilization_studies": 15,
+    "10_social_sciences_economics_organization_studies": 13,
+    "12_education_language_learning_lifelong_development": 16,
+    "13_law_standards_public_services_compliance": 14,
+    "15_enterprises_products_industries_technology_ecosystems": 27,
+    "16_media_sports_entertainment_life_resources": 29,
+    "17_methodology_cognition_research_tools": 50
+  },
+  "excluded_by_rule": {
+    "account_or_local_host": 4,
+    "hard_excluded_or_low_trust": 6,
+    "non_https_or_local": 14,
+    "private_or_low_trust_folder": 3
+  },
+  "notes": [
+    "The public projection is generated from structured data, not hand-edited HTML.",
+    "The private v1.2 browser export remains private; this report exposes only public-safe aggregate counts.",
+    "Folder counts are export-parser counts and may differ from private browser folder-heading counts."
+  ],
+  "public_projection": {
+    "html_export": "exports/research-engineering-bookmarks-public.html",
+    "html_folders": 44,
+    "html_links": 328,
+    "public_sources": 328,
+    "taxonomy_nodes": 18
+  },
+  "schema_version": 1,
+  "source_baseline": {
+    "name": "research_engineering_bookmarks_2026-06-26_v1.2_final.html",
+    "selection_policy": "public_safe_official_or_canonical_projection",
+    "source_entries": 389
+  },
+  "source_type_counts": {
+    "canonical_repository_or_platform": 9,
+    "learning_or_institutional": 6,
+    "official_docs": 10,
+    "official_or_canonical_site": 298,
+    "standards_body": 5
+  }
+}

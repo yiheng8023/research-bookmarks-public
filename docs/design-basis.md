@@ -32,6 +32,7 @@ The checked-in HTML must stay deterministic. If `data/public-sources.json` chang
 
 ```bash
 python -B scripts/build_public_bookmarks.py
+python -B scripts/build_projection_report.py
 ```
 
 Then verify:
@@ -41,3 +42,12 @@ python -B scripts/verify.py
 python -B scripts/simulate_user_flow.py
 ```
 
+## v1.2 Baseline Closeout
+
+The current public projection is based on the private
+`research_engineering_bookmarks_2026-06-26_v1.2_final.html` baseline. The
+private source keeps the full import and audit evidence; this public repository
+keeps only structured public-safe sources, aggregate projection evidence, and
+generated browser-importable output.
+
+See [`projection-closeout.md`](projection-closeout.md).

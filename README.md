@@ -21,8 +21,10 @@ It is not a dump of a user's private browser bookmarks.
 
 - `data/taxonomy.json`: broad resource taxonomy aligned with the resource-radar domain model.
 - `data/public-sources.json`: reviewed public-safe official or canonical sources.
+- `data/projection-report.json`: aggregate evidence for the v1.2 private-source to public-projection conversion.
 - `exports/research-engineering-bookmarks-public.html`: generated bookmark HTML that users can import into a browser.
 - `scripts/build_public_bookmarks.py`: deterministic exporter from structured sources to HTML.
+- `scripts/build_projection_report.py`: deterministic projection report generator.
 - `scripts/simulate_user_flow.py`: user-facing importability and safety simulation.
 - Public/private boundary, source policy, design basis, and sync model docs.
 
@@ -68,14 +70,17 @@ See [docs/design-basis.md](docs/design-basis.md).
 ```text
 data/taxonomy.json                         Public resource taxonomy
 data/public-sources.json                   Public-safe official/canonical source catalog
+data/projection-report.json                Public aggregate projection evidence
 docs/design-basis.md                       Why this repository exists and how it is split
 docs/automation-validation.md              Validation and user-flow simulation contract
+docs/projection-closeout.md                v1.2 source-to-public-projection closeout
 docs/public-private-boundary.md            Public/private bookmark boundary
 docs/private-public-sync-model.md          Safe promotion and sync model
 docs/source-policy.md                      Source admission policy
 exports/research-engineering-bookmarks-public.html
                                             Generated browser-importable bookmark HTML
 scripts/build_public_bookmarks.py          Deterministic exporter
+scripts/build_projection_report.py         Deterministic projection report builder
 scripts/simulate_user_flow.py              User-flow simulation
 scripts/verify.py                          Structure, safety, and determinism checks
 ```
@@ -86,6 +91,7 @@ Regenerate:
 
 ```bash
 python -B scripts/build_public_bookmarks.py
+python -B scripts/build_projection_report.py
 ```
 
 Verify:
@@ -101,9 +107,10 @@ GitHub Actions runs verification on pull requests and pushes to `main`.
 
 1. Edit `data/public-sources.json`, not the generated HTML.
 2. Regenerate `exports/research-engineering-bookmarks-public.html`.
-3. Run verification and user-flow simulation.
-4. Keep complete private bookmarks in `research-bookmarks`.
-5. Use `resource-radar` for broader discovery, scoring, lifecycle, and future automated replenishment.
+3. Regenerate `data/projection-report.json`.
+4. Run verification and user-flow simulation.
+5. Keep complete private bookmarks in `research-bookmarks`.
+6. Use `resource-radar` for broader discovery, scoring, lifecycle, and future automated replenishment.
 
 ## Safety Boundaries
 

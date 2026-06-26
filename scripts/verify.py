@@ -18,15 +18,18 @@ REQUIRED_FILES = [
     ".github/workflows/validate.yml",
     "data/taxonomy.json",
     "data/public-sources.json",
+    "data/projection-report.json",
     "docs/license-policy.md",
     "docs/public-private-boundary.md",
     "docs/private-public-sync-model.md",
     "docs/design-basis.md",
+    "docs/projection-closeout.md",
     "docs/automation-validation.md",
     "docs/source-policy.md",
     "exports/README.md",
     "exports/research-engineering-bookmarks-public.html",
     "scripts/build_public_bookmarks.py",
+    "scripts/build_projection_report.py",
     "scripts/simulate_user_flow.py",
 ]
 
@@ -127,6 +130,24 @@ def verify_sources() -> None:
                 fail(f"forbidden pattern leaked into public source {source['id']}: {pattern}")
 
 
+def verify_projection_report() -> None:
+    sources_data = load_json("data/public-sources.json")
+    report = load_json("data/projection-report.json")
+    if report.get("schema_version") != 1:
+        fail("projection report schema_version must be 1")
+    public_sources = len(sources_data["sources"])
+    if report["source_baseline"]["source_entries"] != sources_data["counts"]["source_entries"]:
+        fail("projection report source entry count does not match public-sources.json")
+    if report["public_projection"]["public_sources"] != public_sources:
+        fail("projection report public source count does not match public-sources.json")
+    if report["public_projection"]["html_links"] != public_sources:
+        fail("projection report HTML link count does not match public source count")
+    if report["boundary"]["private_source_repository"] != "research-bookmarks":
+        fail("projection report private source boundary is wrong")
+    if report["boundary"]["resource_intelligence_repository"] != "resource-radar":
+        fail("projection report resource intelligence boundary is wrong")
+
+
 def verify_no_raw_browser_exports() -> None:
     for path in ROOT.rglob("*"):
         if ".git" in path.parts:
@@ -200,6 +221,7 @@ def main() -> None:
     verify_required_files()
     verify_taxonomy()
     verify_sources()
+    verify_projection_report()
     verify_no_raw_browser_exports()
     verify_generated_bookmarks()
     verify_language_links()

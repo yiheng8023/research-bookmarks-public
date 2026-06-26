@@ -21,8 +21,10 @@
 
 - `data/taxonomy.json`：与 resource-radar domain model 对齐的宽域资源分类。
 - `data/public-sources.json`：经过审查的 public-safe 官方或权威来源。
+- `data/projection-report.json`：v1.2 私有来源到公开投影转换的公开聚合证据。
 - `exports/research-engineering-bookmarks-public.html`：可直接导入浏览器的生成书签 HTML。
 - `scripts/build_public_bookmarks.py`：结构化来源到 HTML 的确定性导出器。
+- `scripts/build_projection_report.py`：确定性投影报告生成器。
 - `scripts/simulate_user_flow.py`：面向用户导入与安全边界的模拟验证。
 - 公开/私有边界、来源策略、设计依据和同步模型文档。
 
@@ -68,14 +70,17 @@ open-resource-governance
 ```text
 data/taxonomy.json                         公开资源分类
 data/public-sources.json                   public-safe 官方/权威来源目录
+data/projection-report.json                公开聚合投影证据
 docs/design-basis.md                       仓库存在原因与拆分依据
 docs/automation-validation.md              验证与用户流程模拟契约
+docs/projection-closeout.md                v1.2 来源到公开投影的收官说明
 docs/public-private-boundary.md            公开/私有书签边界
 docs/private-public-sync-model.md          安全提升与同步模型
 docs/source-policy.md                      来源准入策略
 exports/research-engineering-bookmarks-public.html
                                             生成的可导入浏览器书签 HTML
 scripts/build_public_bookmarks.py          确定性导出器
+scripts/build_projection_report.py         确定性投影报告生成器
 scripts/simulate_user_flow.py              用户流程模拟
 scripts/verify.py                          结构、安全与确定性检查
 ```
@@ -86,6 +91,7 @@ scripts/verify.py                          结构、安全与确定性检查
 
 ```bash
 python -B scripts/build_public_bookmarks.py
+python -B scripts/build_projection_report.py
 ```
 
 验证：
@@ -101,9 +107,10 @@ GitHub Actions 会在 pull request 和推送到 `main` 时运行验证。
 
 1. 修改 `data/public-sources.json`，不要手写生成 HTML。
 2. 重新生成 `exports/research-engineering-bookmarks-public.html`。
-3. 运行验证和用户流程模拟。
-4. 完整私有书签保留在 `research-bookmarks`。
-5. 更广义的发现、评分、生命周期和未来自动补充交给 `resource-radar`。
+3. 重新生成 `data/projection-report.json`。
+4. 运行验证和用户流程模拟。
+5. 完整私有书签保留在 `research-bookmarks`。
+6. 更广义的发现、评分、生命周期和未来自动补充交给 `resource-radar`。
 
 ## 安全边界
 
