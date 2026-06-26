@@ -1,0 +1,8 @@
+research-bookmarks-public
+
+This repository contains public-safe bookmark taxonomy and official-source catalog material.
+
+Repository-owned code, scripts, schemas, workflows, and tests are licensed under Apache-2.0.
+Repository-owned documentation and taxonomy-style prose may also be used under CC BY 4.0 where explicitly stated.
+
+Private bookmarks, personal notes, browsing history, subjective preference data, account state, and third-party restricted content are excluded from this public catalog and from any public license grant.

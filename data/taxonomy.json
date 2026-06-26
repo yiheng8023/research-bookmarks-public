@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "taxonomy": [
+    {
+      "id": "software-engineering",
+      "label": "Software Engineering",
+      "description": "Programming languages, frameworks, architecture, testing, operations, security, and delivery."
+    },
+    {
+      "id": "ai-and-agents",
+      "label": "AI and Agents",
+      "description": "AI platforms, agent frameworks, automation patterns, evaluation, and safety."
+    },
+    {
+      "id": "research-and-knowledge",
+      "label": "Research and Knowledge",
+      "description": "Research methods, knowledge graphs, standards, documentation, and long-term learning."
+    },
+    {
+      "id": "design-and-product",
+      "label": "Design and Product",
+      "description": "Product thinking, UX, visual design, prototyping, and user research."
+    },
+    {
+      "id": "governance-and-operations",
+      "label": "Governance and Operations",
+      "description": "Licensing, security, privacy, compliance, project governance, and sustainability."
+    }
+  ]
+}
