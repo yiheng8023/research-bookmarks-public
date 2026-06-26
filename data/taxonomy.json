@@ -1,30 +1,132 @@
 {
   "schema_version": 1,
+  "design_basis": "Aligned with resource-radar universal resource taxonomy; software engineering is priority, not boundary.",
   "taxonomy": [
     {
-      "id": "software-engineering",
-      "label": "Software Engineering",
-      "description": "Programming languages, frameworks, architecture, testing, operations, security, and delivery."
+      "id": "00_workspace_common_entrypoints",
+      "order": 0,
+      "label": "00 Workspace and common entrypoints",
+      "zh_label": "00_工作台与常用入口",
+      "description": "Frequently used entrypoints for daily work and navigation."
     },
     {
-      "id": "ai-and-agents",
-      "label": "AI and Agents",
-      "description": "AI platforms, agent frameworks, automation patterns, evaluation, and safety."
+      "id": "01_artificial_intelligence_computational_intelligence",
+      "order": 1,
+      "label": "01 Artificial intelligence and computational intelligence",
+      "zh_label": "01_人工智能与计算智能",
+      "description": "AI models, platforms, agents, evaluations, and local model tooling."
     },
     {
-      "id": "research-and-knowledge",
-      "label": "Research and Knowledge",
-      "description": "Research methods, knowledge graphs, standards, documentation, and long-term learning."
+      "id": "02_computer_science_software_engineering_information_systems",
+      "order": 2,
+      "label": "02 Computer science, software engineering, and information systems",
+      "zh_label": "02_计算机科学、软件工程与信息系统",
+      "description": "Software engineering, programming, infrastructure, systems, and engineering practice."
     },
     {
-      "id": "design-and-product",
-      "label": "Design and Product",
-      "description": "Product thinking, UX, visual design, prototyping, and user research."
+      "id": "03_data_graph_models_knowledge_organization",
+      "order": 3,
+      "label": "03 Data, graph models, and knowledge organization",
+      "zh_label": "03_数据、图模型与知识组织",
+      "description": "Data platforms, graphs, semantic resources, and knowledge organization."
     },
     {
-      "id": "governance-and-operations",
-      "label": "Governance and Operations",
-      "description": "Licensing, security, privacy, compliance, project governance, and sustainability."
+      "id": "04_mathematics_natural_sciences_foundational_research",
+      "order": 4,
+      "label": "04 Mathematics, natural sciences, and foundational research",
+      "zh_label": "04_数学、自然科学与基础研究",
+      "description": "Mathematics, papers, science references, and foundational research."
+    },
+    {
+      "id": "05_engineering_technology_hardware_industrial_systems",
+      "order": 5,
+      "label": "05 Engineering technology, hardware, and industrial systems",
+      "zh_label": "05_工程技术、硬件与工业系统",
+      "description": "Hardware, electrical engineering, industrial systems, operating environments, and backup tooling."
+    },
+    {
+      "id": "06_medicine_health_life_sciences",
+      "order": 6,
+      "label": "06 Medicine, health, and life sciences",
+      "zh_label": "06_医学、健康与生命科学",
+      "description": "Medicine, public health, life sciences, and evidence-based references."
+    },
+    {
+      "id": "07_agriculture_environment_earth_systems",
+      "order": 7,
+      "label": "07 Agriculture, environment, and earth systems",
+      "zh_label": "07_农业、环境与地球系统",
+      "description": "Agriculture, climate, environment, geography, and earth systems."
+    },
+    {
+      "id": "08_history_geography_civilization_studies",
+      "order": 8,
+      "label": "08 History, geography, and civilization studies",
+      "zh_label": "08_历史、地理与文明研究",
+      "description": "History, geography, maps, archives, and civilization studies."
+    },
+    {
+      "id": "09_philosophy_language_literature_humanities",
+      "order": 9,
+      "label": "09 Philosophy, language, literature, and humanities",
+      "zh_label": "09_哲学、语言、文学与人文",
+      "description": "Humanities, philosophy, language, literature, and cultural references."
+    },
+    {
+      "id": "10_social_sciences_economics_organization_studies",
+      "order": 10,
+      "label": "10 Social sciences, economics, and organization studies",
+      "zh_label": "10_社会科学、经济与组织研究",
+      "description": "Social sciences, economics, organization studies, and public data."
+    },
+    {
+      "id": "11_art_design_architecture_media_culture",
+      "order": 11,
+      "label": "11 Art, design, architecture, media, and culture",
+      "zh_label": "11_艺术、设计、建筑、媒体与文化",
+      "description": "Design, art, architecture, media, and cultural resources."
+    },
+    {
+      "id": "12_education_language_learning_lifelong_development",
+      "order": 12,
+      "label": "12 Education, language learning, and lifelong development",
+      "zh_label": "12_教育、语言学习与终身发展",
+      "description": "Open courses, learning platforms, language learning, and personal development."
+    },
+    {
+      "id": "13_law_standards_public_services_compliance",
+      "order": 13,
+      "label": "13 Law, standards, public services, and compliance",
+      "zh_label": "13_法律、标准、公共服务与合规",
+      "description": "Laws, standards, compliance, public services, and official references."
+    },
+    {
+      "id": "14_governance_institutions_public_policy",
+      "order": 14,
+      "label": "14 Governance, institutions, and public policy",
+      "zh_label": "14_治理、机构与公共政策",
+      "description": "Government, policy, institutions, NGOs, and governance resources."
+    },
+    {
+      "id": "15_enterprises_products_industries_technology_ecosystems",
+      "order": 15,
+      "label": "15 Enterprises, products, industries, and technology ecosystems",
+      "zh_label": "15_企业、产品、产业与技术生态",
+      "description": "Companies, products, industries, technology ecosystems, and market references."
+    },
+    {
+      "id": "16_media_sports_entertainment_life_resources",
+      "order": 16,
+      "label": "16 Media, sports, entertainment, and life resources",
+      "zh_label": "16_媒体、体育、娱乐与生活资源",
+      "description": "Media, sports, entertainment, life utilities, and general public resources."
+    },
+    {
+      "id": "17_methodology_cognition_research_tools",
+      "order": 17,
+      "label": "17 Methodology, cognition, and research tools",
+      "zh_label": "17_方法论、认知与研究工具",
+      "description": "Research methods, cognition, fact-checking, systems thinking, and methodology."
     }
   ]
 }

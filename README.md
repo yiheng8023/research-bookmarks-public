@@ -2,77 +2,109 @@
 
 English | [简体中文](README.zh-CN.md)
 
-Public-safe official-source bookmark directory and taxonomy seed for resource discovery, knowledge-graph planning, and browser-independent bookmark portability.
+Public-safe bookmark catalog, source taxonomy, and browser-importable HTML projection for research, engineering, knowledge work, and resource discovery.
+
+Note: `public` describes the content boundary. The repository may remain private while it is staged, but its contents are maintained as public-safe so it can be published later without exposing private bookmark data.
 
 ## Repository Role
 
-This repository is a public-safe bookmark catalog. It provides reusable taxonomy, official source directories, and import/export conventions that can seed broader resource discovery systems.
+This repository owns the public-safe bookmark projection. It provides:
 
-It is not a dump of a user's browser bookmarks.
+- a reusable taxonomy;
+- a structured public source catalog;
+- deterministic generation of browser-importable bookmark HTML;
+- validation and user-flow simulation for the public artifact.
+
+It is not a dump of a user's private browser bookmarks.
 
 ## What This Repository Provides
 
-- A public-safe taxonomy for research, engineering, knowledge, and tool resources.
-- Official-source bookmark examples.
-- Validation for public-safe source metadata.
-- A boundary model for private bookmark overlays.
-- A reusable input lane for resource-radar discovery.
+- `data/taxonomy.json`: broad resource taxonomy aligned with the resource-radar domain model.
+- `data/public-sources.json`: reviewed public-safe official or canonical sources.
+- `exports/research-engineering-bookmarks-public.html`: generated bookmark HTML that users can import into a browser.
+- `scripts/build_public_bookmarks.py`: deterministic exporter from structured sources to HTML.
+- `scripts/simulate_user_flow.py`: user-facing importability and safety simulation.
+- Public/private boundary, source policy, design basis, and sync model docs.
 
 ## What This Repository Does Not Own
 
-- Personal browser bookmarks.
-- Browsing history, notes, private folders, account state, or preferences.
-- Non-official personal recommendations unless explicitly reviewed for public release.
-- Resource scoring, repository lifecycle analysis, or GitHub-specific discovery automation; use resource-radar for that.
-- Curated agent Skill approval; use a curated Skills repository for that.
+- Complete personal browser bookmarks.
+- Browsing history, private folders, private notes, account state, or subjective preferences.
+- Raw private bookmark imports; those belong in `research-bookmarks`.
+- Discovery, scoring, lifecycle analysis, summarization, or broad automation; those belong in `resource-radar`.
+- Curated agent Skill approval; that belongs in the curated Skills repository.
 
-## Relationship To Private Bookmarks
-
-Recommended model:
+## Relationship To The Paired Repositories
 
 ```text
-research-bookmarks-public
-  -> owns public-safe taxonomy, official sources, import/export contracts
+research-bookmarks
+  -> private source of truth for complete imports, overlays, audits, and declassification inputs
 
-private bookmarks repository
-  -> owns complete personal bookmarks, private notes, non-official resources, preferences, and browser exports
-  -> may consume the public taxonomy
-  -> may promote reviewed official sources back through a declassification gate
+research-bookmarks-public
+  -> public-safe taxonomy, structured official/canonical sources, deterministic HTML export
+
+resource-radar
+  -> discovery, normalization, scoring, lifecycle state, summaries, and broader projections
+
+open-resource-governance
+  -> public governance hub and launch/readiness material
 ```
 
-Do not run blind bidirectional sync. Private-to-public promotion must be filtered and reviewed.
+Do not run blind bidirectional sync. Private-to-public promotion must be filtered, reviewed, and regenerated through this repository's exporter.
 
-## Relationship To Resource Radar
+## Design Basis
 
-This repository can provide high-level source categories and official entry points to resource-radar. Resource-radar remains responsible for discovery, normalization, scoring, lifecycle state, deduplication, reports, and candidate routing.
+The design follows four constraints:
+
+1. Users need a real importable bookmark artifact, not only abstract rules.
+2. HTML is useful as an output, but structured data must remain the source.
+3. Public projections must not leak local services, account/session URLs, private preferences, or low-trust fallback resources.
+4. `resource-radar` can automate discovery and lifecycle, but this repository remains the public bookmark projection lane.
+
+See [docs/design-basis.md](docs/design-basis.md).
 
 ## Layout
 
 ```text
-data/taxonomy.json                  Public taxonomy seed
-data/official-sources.example.json  Official-source examples
-docs/                               Boundaries, source policy, sync model
-exports/                            Export/import contract notes
-scripts/verify.py                   Structure and public-safety checks
+data/taxonomy.json                         Public resource taxonomy
+data/public-sources.json                   Public-safe official/canonical source catalog
+docs/design-basis.md                       Why this repository exists and how it is split
+docs/automation-validation.md              Validation and user-flow simulation contract
+docs/public-private-boundary.md            Public/private bookmark boundary
+docs/private-public-sync-model.md          Safe promotion and sync model
+docs/source-policy.md                      Source admission policy
+exports/research-engineering-bookmarks-public.html
+                                            Generated browser-importable bookmark HTML
+scripts/build_public_bookmarks.py          Deterministic exporter
+scripts/simulate_user_flow.py              User-flow simulation
+scripts/verify.py                          Structure, safety, and determinism checks
 ```
 
 ## Verification
 
-Run:
+Regenerate:
+
+```bash
+python -B scripts/build_public_bookmarks.py
+```
+
+Verify:
 
 ```bash
 python -B scripts/verify.py
+python -B scripts/simulate_user_flow.py
 ```
 
-GitHub Actions runs the same verification on pull requests and pushes to `main`.
+GitHub Actions runs verification on pull requests and pushes to `main`.
 
 ## Update Rules
 
-1. Prefer official source pages and canonical project documentation.
-2. Keep private browsing history, private notes, subjective rankings, and personal folders out of this repository.
-3. Use resource-radar for broad discovery and lifecycle automation.
-4. Use a private overlay for complete personal bookmark management.
+1. Edit `data/public-sources.json`, not the generated HTML.
+2. Regenerate `exports/research-engineering-bookmarks-public.html`.
+3. Run verification and user-flow simulation.
+4. Keep complete private bookmarks in `research-bookmarks`.
+5. Use `resource-radar` for broader discovery, scoring, lifecycle, and future automated replenishment.
 
 ## Safety Boundaries
 
-This repository is designed to become public. If a bookmark exposes personal preference, private context, non-official endorsement, account state, or browsing behavior, keep it in a private overlay.
+This repository is public-safe by design. If a bookmark exposes personal preference, private context, non-official endorsement, local service state, account/session data, or low-trust fallback behavior, keep it in `research-bookmarks` or a private review queue.

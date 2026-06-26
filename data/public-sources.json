@@ -1,0 +1,2969 @@
+{
+  "schema_version": 1,
+  "source": "research_engineering_bookmarks_2026-06-26_v1.2_final.html",
+  "selection_policy": "public_safe_official_or_canonical_projection",
+  "counts": {
+    "source_entries": 389,
+    "public_sources": 328,
+    "excluded_by_rule": {
+      "account_or_local_host": 4,
+      "private_or_low_trust_folder": 3,
+      "non_https_or_local": 14,
+      "hard_excluded_or_low_trust": 6
+    }
+  },
+  "sources": [
+    {
+      "id": "feishu-cn",
+      "title": "飞书",
+      "url": "https://www.feishu.cn/",
+      "category": "00_workspace_common_entrypoints",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "console-anthropic-com-anthropic-console",
+      "title": "Anthropic Console",
+      "url": "https://console.anthropic.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "artificialanalysis-ai-artificial-analysis",
+      "title": "Artificial Analysis",
+      "url": "https://artificialanalysis.ai/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "byteplus-com-byteplus",
+      "title": "BytePlus（国际站）",
+      "url": "https://www.byteplus.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "ccswitch-io-cc-switch",
+      "title": "CC Switch",
+      "url": "https://www.ccswitch.io/zh/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "chatgpt-com-chatgpt",
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "chatgpt-com-chatgpt-codex",
+      "title": "ChatGPT Codex",
+      "url": "https://chatgpt.com/codex",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "claude-ai-claude",
+      "title": "Claude",
+      "url": "https://claude.ai/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "anthropic-com-claude-code",
+      "title": "Claude Code",
+      "url": "https://www.anthropic.com/claude-code",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "coze-com-coze",
+      "title": "Coze",
+      "url": "https://www.coze.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "chat-deepseek-com-deepseek",
+      "title": "DeepSeek",
+      "url": "https://chat.deepseek.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "epoch-ai-epoch-ai",
+      "title": "Epoch AI",
+      "url": "https://epoch.ai/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "github-com-github-copilot",
+      "title": "GitHub Copilot",
+      "url": "https://github.com/features/copilot",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "canonical_repository_or_platform",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "aistudio-google-com-google-ai-studio",
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "gemini-google-com-google-gemini",
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "notebooklm-google-google-notebooklm",
+      "title": "Google NotebookLM",
+      "url": "https://notebooklm.google/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "grok-com-grok",
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "huggingface-co-hugging-face",
+      "title": "Hugging Face",
+      "url": "https://huggingface.co/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "kimi-com-kimi",
+      "title": "Kimi",
+      "url": "https://www.kimi.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "platform-kimi-ai-kimi-platform",
+      "title": "Kimi Platform",
+      "url": "https://platform.kimi.ai/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "livebench-ai-livebench",
+      "title": "LiveBench",
+      "url": "https://livebench.ai/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "llama-com-llama",
+      "title": "Llama",
+      "url": "https://www.llama.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "github-com-llama-cpp",
+      "title": "llama.cpp",
+      "url": "https://github.com/ggerganov/llama.cpp",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "canonical_repository_or_platform",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "lmstudio-ai-lm-studio",
+      "title": "LM Studio",
+      "url": "https://lmstudio.ai/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "lmarena-ai-lmarena",
+      "title": "LMArena",
+      "url": "https://lmarena.ai/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "modelscope-cn-modelscope",
+      "title": "ModelScope",
+      "url": "https://www.modelscope.cn/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "github-com-moonshotai-on-github",
+      "title": "MoonshotAI on GitHub",
+      "url": "https://github.com/MoonshotAI",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "canonical_repository_or_platform",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "ollama-com-ollama",
+      "title": "Ollama",
+      "url": "https://ollama.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "platform-openai-com-openai-platform",
+      "title": "OpenAI Platform",
+      "url": "https://platform.openai.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "openrouter-ai-openrouter",
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "paperswithcode-com-papers-with-code",
+      "title": "Papers With Code",
+      "url": "https://paperswithcode.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "chat-qwen-ai-qwen-chat",
+      "title": "Qwen Chat",
+      "url": "https://chat.qwen.ai/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "huggingface-co-qwen-on-hugging-face",
+      "title": "Qwen on Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "aiindex-stanford-edu-stanford-ai-index",
+      "title": "Stanford AI Index",
+      "url": "https://aiindex.stanford.edu/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "learning_or_institutional",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "swebench-com-swe-bench",
+      "title": "SWE-bench",
+      "url": "https://www.swebench.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "docs-vllm-ai-vllm",
+      "title": "vLLM",
+      "url": "https://docs.vllm.ai/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_docs",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "github-com-z-ai-on-github",
+      "title": "Z.ai on GitHub",
+      "url": "https://github.com/zai-org",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "canonical_repository_or_platform",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "z-ai-z-ai",
+      "title": "Z.ai（智谱）",
+      "url": "https://z.ai/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "tongyi-aliyun-com",
+      "title": "千问（阿里，中国站）",
+      "url": "https://tongyi.aliyun.com/qianwen/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "volcengine-com",
+      "title": "火山引擎",
+      "url": "https://www.volcengine.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "yuanbao-tencent-com",
+      "title": "腾讯元宝",
+      "url": "https://yuanbao.tencent.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "hunyuan-tencent-com",
+      "title": "腾讯混元",
+      "url": "https://hunyuan.tencent.com/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "doubao-com",
+      "title": "豆包",
+      "url": "https://www.doubao.com/chat/",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "adr-github-io-architecture-decision-records",
+      "title": "Architecture Decision Records",
+      "url": "https://adr.github.io/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "developers-cloudflare-com-cloudflare-developers",
+      "title": "Cloudflare Developers",
+      "url": "https://developers.cloudflare.com/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "crates-io-crates-io",
+      "title": "crates.io",
+      "url": "https://crates.io/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "docs-docker-com-docker-docs",
+      "title": "Docker Docs",
+      "url": "https://docs.docker.com/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_docs",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "hub-docker-com-docker-hub",
+      "title": "Docker Hub",
+      "url": "https://hub.docker.com/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "github-com-github",
+      "title": "GitHub",
+      "url": "https://github.com/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "canonical_repository_or_platform",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "docs-github-com-github-actions",
+      "title": "GitHub Actions",
+      "url": "https://docs.github.com/actions",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "canonical_repository_or_platform",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "github-com-github-explore",
+      "title": "GitHub Explore",
+      "url": "https://github.com/explore",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "canonical_repository_or_platform",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "about-gitlab-com-gitlab",
+      "title": "GitLab",
+      "url": "https://about.gitlab.com/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "sre-google-google-sre-books",
+      "title": "Google SRE Books",
+      "url": "https://sre.google/books/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "brew-sh-homebrew",
+      "title": "Homebrew",
+      "url": "https://brew.sh/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "jestjs-io-jest",
+      "title": "Jest",
+      "url": "https://jestjs.io/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "kubernetes-io-kubernetes-docs",
+      "title": "Kubernetes Docs",
+      "url": "https://kubernetes.io/docs/home/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_docs",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "martinfowler-com-martin-fowler",
+      "title": "Martin Fowler",
+      "url": "https://martinfowler.com/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "mvnrepository-com-maven-repository",
+      "title": "Maven Repository",
+      "url": "https://mvnrepository.com/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "developer-mozilla-org-mdn-web-docs",
+      "title": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "docs-netlify-com-netlify-docs",
+      "title": "Netlify Docs",
+      "url": "https://docs.netlify.com/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_docs",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "nodejs-org-node-js-docs",
+      "title": "Node.js Docs",
+      "url": "https://nodejs.org/en/docs",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_docs",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "npmjs-com-npm-registry",
+      "title": "npm Registry",
+      "url": "https://www.npmjs.com/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "nuget-org-nuget",
+      "title": "NuGet",
+      "url": "https://www.nuget.org/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "opentelemetry-io-opentelemetry",
+      "title": "OpenTelemetry",
+      "url": "https://opentelemetry.io/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "playwright-dev-playwright-docs",
+      "title": "Playwright Docs",
+      "url": "https://playwright.dev/docs/intro",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_docs",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "pypi-org-pypi",
+      "title": "PyPI",
+      "url": "https://pypi.org/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "docs-python-org-python-docs",
+      "title": "Python Docs",
+      "url": "https://docs.python.org/3/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_docs",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "refactoring-guru-refactoring-guru",
+      "title": "Refactoring Guru",
+      "url": "https://refactoring.guru/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "rust-lang-org-rust-docs",
+      "title": "Rust Docs",
+      "url": "https://www.rust-lang.org/learn",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "sonarsource-com-sonarqube",
+      "title": "SonarQube",
+      "url": "https://www.sonarsource.com/products/sonarqube/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "sourceforge-net-sourceforge",
+      "title": "SourceForge",
+      "url": "https://sourceforge.net/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "github-com-system-design-primer",
+      "title": "System Design Primer",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "canonical_repository_or_platform",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "12factor-net-the-twelve-factor-app",
+      "title": "The Twelve-Factor App",
+      "url": "https://12factor.net/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "typescriptlang-org-typescript-docs",
+      "title": "TypeScript Docs",
+      "url": "https://www.typescriptlang.org/docs/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_docs",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "vercel-com-vercel-docs",
+      "title": "Vercel Docs",
+      "url": "https://vercel.com/docs",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_docs",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "vitest-dev-vitest",
+      "title": "Vitest",
+      "url": "https://vitest.dev/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "w3-org-w3c",
+      "title": "W3C",
+      "url": "https://www.w3.org/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "standards_body",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "whatwg-org-whatwg",
+      "title": "WHATWG",
+      "url": "https://whatwg.org/",
+      "category": "02_computer_science_software_engineering_information_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "arangodb-com-arangodb",
+      "title": "ArangoDB",
+      "url": "https://www.arangodb.com/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "data-gov-data-gov",
+      "title": "Data.gov",
+      "url": "https://data.gov/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "db-engines-com-db-engines-ranking",
+      "title": "DB-Engines Ranking",
+      "url": "https://db-engines.com/en/ranking",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "dbpedia-org-dbpedia",
+      "title": "DBpedia",
+      "url": "https://www.dbpedia.org/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "app-diagrams-net-diagrams-net",
+      "title": "diagrams.net",
+      "url": "https://app.diagrams.net/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "excalidraw-com-excalidraw",
+      "title": "Excalidraw",
+      "url": "https://excalidraw.com/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "figshare-com-figshare",
+      "title": "Figshare",
+      "url": "https://figshare.com/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "datasetsearch-research-google-com-google-dataset-search",
+      "title": "Google Dataset Search",
+      "url": "https://datasetsearch.research.google.com/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "graphviz-org-graphviz",
+      "title": "Graphviz",
+      "url": "https://graphviz.org/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "kaggle-com-kaggle-datasets",
+      "title": "Kaggle Datasets",
+      "url": "https://www.kaggle.com/datasets",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "memgraph-com-memgraph",
+      "title": "Memgraph",
+      "url": "https://memgraph.com/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "mermaid-js-org-mermaid",
+      "title": "Mermaid",
+      "url": "https://mermaid.js.org/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "neo4j-com-neo4j-official-docs",
+      "title": "Neo4j Official Docs",
+      "url": "https://neo4j.com/docs/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_docs",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "observablehq-com-observable",
+      "title": "Observable",
+      "url": "https://observablehq.com/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "openalex-org-openalex",
+      "title": "OpenAlex",
+      "url": "https://openalex.org/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "schema-org-schema-org",
+      "title": "Schema.org",
+      "url": "https://schema.org/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "w3-org-sparql-1-1",
+      "title": "SPARQL 1.1",
+      "url": "https://www.w3.org/TR/sparql11-query/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "standards_body",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "w3-org-w3c-semantic-web",
+      "title": "W3C Semantic Web",
+      "url": "https://www.w3.org/standards/semanticweb/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "standards_body",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "wikidata-org-wikidata",
+      "title": "Wikidata",
+      "url": "https://www.wikidata.org/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "zenodo-org-zenodo",
+      "title": "Zenodo",
+      "url": "https://zenodo.org/",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "we-yun-com",
+      "title": "微云数聚",
+      "url": "https://we-yun.com/index.html",
+      "category": "03_data_graph_models_knowledge_organization",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "arxiv-org-arxiv",
+      "title": "arXiv",
+      "url": "https://arxiv.org/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "crossref-org-crossref",
+      "title": "Crossref",
+      "url": "https://www.crossref.org/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "desmos-com-desmos",
+      "title": "Desmos",
+      "url": "https://www.desmos.com/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "britannica-com-encyclopaedia-britannica",
+      "title": "Encyclopaedia Britannica",
+      "url": "https://www.britannica.com/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "esa-int-esa",
+      "title": "ESA",
+      "url": "https://www.esa.int/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "scholar-google-com-google-scholar",
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "materialsproject-org-materials-project",
+      "title": "Materials Project",
+      "url": "https://materialsproject.org/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "mathworld-wolfram-com-mathworld",
+      "title": "MathWorld",
+      "url": "https://mathworld.wolfram.com/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "nasa-gov-nasa",
+      "title": "NASA",
+      "url": "https://www.nasa.gov/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "earthdata-nasa-gov-nasa-earthdata",
+      "title": "NASA Earthdata",
+      "url": "https://www.earthdata.nasa.gov/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "nist-gov-nist",
+      "title": "NIST",
+      "url": "https://www.nist.gov/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "webbook-nist-gov-nist-chemistry-webbook",
+      "title": "NIST Chemistry WebBook",
+      "url": "https://webbook.nist.gov/chemistry/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "noaa-gov-noaa",
+      "title": "NOAA",
+      "url": "https://www.noaa.gov/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "oeis-org-oeis",
+      "title": "OEIS",
+      "url": "https://oeis.org/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "pubchem-ncbi-nlm-nih-gov-pubchem",
+      "title": "PubChem",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "semanticscholar-org-semantic-scholar",
+      "title": "Semantic Scholar",
+      "url": "https://www.semanticscholar.org/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "usgs-gov-usgs",
+      "title": "USGS",
+      "url": "https://www.usgs.gov/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "wikipedia-org-wikipedia",
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "wolframalpha-com-wolfram-alpha",
+      "title": "Wolfram Alpha",
+      "url": "https://www.wolframalpha.com/",
+      "category": "04_mathematics_natural_sciences_foundational_research",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "allaboutcircuits-com-all-about-circuits",
+      "title": "All About Circuits",
+      "url": "https://www.allaboutcircuits.com/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "wiki-archlinux-org-arch-linux-wiki",
+      "title": "Arch Linux Wiki",
+      "url": "https://wiki.archlinux.org/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "asuswrt-merlin-net-asuswrt-merlin",
+      "title": "Asuswrt-Merlin",
+      "url": "https://www.asuswrt-merlin.net/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "digikey-cn-digi-key",
+      "title": "Digi-Key",
+      "url": "https://www.digikey.cn/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "distrowatch-com-distrowatch",
+      "title": "DistroWatch",
+      "url": "https://distrowatch.com/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "freefilesync-org-freefilesync",
+      "title": "FreeFileSync",
+      "url": "https://freefilesync.org/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "iec-ch-iec",
+      "title": "IEC",
+      "url": "https://www.iec.ch/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "ieeexplore-ieee-org-ieee-xplore",
+      "title": "IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "fw-koolcenter-com-koolcenter",
+      "title": "KoolCenter",
+      "url": "https://fw.koolcenter.com/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "kopia-io-kopia",
+      "title": "Kopia",
+      "url": "https://kopia.io/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "learn-microsoft-com-microsoft-learn",
+      "title": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "microsoft-com-microsoft-software-download",
+      "title": "Microsoft Software Download",
+      "url": "https://www.microsoft.com/software-download/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "mouser-cn-mouser",
+      "title": "Mouser",
+      "url": "https://www.mouser.cn/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "nanoreview-net-nanoreview",
+      "title": "NanoReview",
+      "url": "https://nanoreview.net/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "notebookcheck-net-notebookcheck",
+      "title": "Notebookcheck",
+      "url": "https://www.notebookcheck.net/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "octopart-com-octopart",
+      "title": "Octopart",
+      "url": "https://octopart.com/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "openwrt-org-openwrt-project",
+      "title": "OpenWrt Project",
+      "url": "https://openwrt.org/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "cpubenchmark-net-passmark-benchmarks",
+      "title": "PassMark Benchmarks",
+      "url": "https://www.cpubenchmark.net/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "restic-net-restic",
+      "title": "Restic",
+      "url": "https://restic.net/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "syncthing-net-syncthing",
+      "title": "Syncthing",
+      "url": "https://syncthing.net/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "techpowerup-com-techpowerup",
+      "title": "TechPowerUp",
+      "url": "https://www.techpowerup.com/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "topcpu-net-topcpu",
+      "title": "TopCPU",
+      "url": "https://www.topcpu.net/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "ubuntu-com-ubuntu",
+      "title": "Ubuntu",
+      "url": "https://ubuntu.com/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "learn-microsoft-com-windows-sysinternals",
+      "title": "Windows Sysinternals",
+      "url": "https://learn.microsoft.com/sysinternals/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "eechina-com",
+      "title": "电子工程师在线工具",
+      "url": "https://www.eechina.com/tools/",
+      "category": "05_engineering_technology_hardware_industrial_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "acsm-org-acsm",
+      "title": "ACSM",
+      "url": "https://www.acsm.org/",
+      "category": "06_medicine_health_life_sciences",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "cdc-gov-cdc",
+      "title": "CDC",
+      "url": "https://www.cdc.gov/",
+      "category": "06_medicine_health_life_sciences",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "cochranelibrary-com-cochrane-library",
+      "title": "Cochrane Library",
+      "url": "https://www.cochranelibrary.com/",
+      "category": "06_medicine_health_life_sciences",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "exrx-net-exrx-net",
+      "title": "ExRx.net",
+      "url": "https://exrx.net/",
+      "category": "06_medicine_health_life_sciences",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "mayoclinic-org-mayo-clinic",
+      "title": "Mayo Clinic",
+      "url": "https://www.mayoclinic.org/",
+      "category": "06_medicine_health_life_sciences",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "medlineplus-gov-medlineplus",
+      "title": "MedlinePlus",
+      "url": "https://medlineplus.gov/",
+      "category": "06_medicine_health_life_sciences",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "msdmanuals-com-msd-manual",
+      "title": "MSD Manual",
+      "url": "https://www.msdmanuals.com/",
+      "category": "06_medicine_health_life_sciences",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "nature-com-nature",
+      "title": "Nature",
+      "url": "https://www.nature.com/",
+      "category": "06_medicine_health_life_sciences",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "ncbi-nlm-nih-gov-ncbi",
+      "title": "NCBI",
+      "url": "https://www.ncbi.nlm.nih.gov/",
+      "category": "06_medicine_health_life_sciences",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "pubmed-ncbi-nlm-nih-gov-pubmed",
+      "title": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "category": "06_medicine_health_life_sciences",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "science-org-science",
+      "title": "Science",
+      "url": "https://www.science.org/",
+      "category": "06_medicine_health_life_sciences",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "strongerbyscience-com-stronger-by-science",
+      "title": "Stronger by Science",
+      "url": "https://www.strongerbyscience.com/",
+      "category": "06_medicine_health_life_sciences",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "uniprot-org-uniprot",
+      "title": "UniProt",
+      "url": "https://www.uniprot.org/",
+      "category": "06_medicine_health_life_sciences",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "who-int-who",
+      "title": "WHO",
+      "url": "https://www.who.int/",
+      "category": "06_medicine_health_life_sciences",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "cgiar-org-cgiar",
+      "title": "CGIAR",
+      "url": "https://www.cgiar.org/",
+      "category": "07_agriculture_environment_earth_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "fao-org-fao",
+      "title": "FAO",
+      "url": "https://www.fao.org/",
+      "category": "07_agriculture_environment_earth_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "iea-org-iea",
+      "title": "IEA",
+      "url": "https://www.iea.org/",
+      "category": "07_agriculture_environment_earth_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "ipcc-ch-ipcc",
+      "title": "IPCC",
+      "url": "https://www.ipcc.ch/",
+      "category": "07_agriculture_environment_earth_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "climate-gov-noaa-climate",
+      "title": "NOAA Climate",
+      "url": "https://www.climate.gov/",
+      "category": "07_agriculture_environment_earth_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "ourworldindata-org-our-world-in-data-environment",
+      "title": "Our World in Data - Environment",
+      "url": "https://ourworldindata.org/environmental-impacts-of-food",
+      "category": "07_agriculture_environment_earth_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "usda-gov-usda",
+      "title": "USDA",
+      "url": "https://www.usda.gov/",
+      "category": "07_agriculture_environment_earth_systems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "britishmuseum-org-british-museum",
+      "title": "British Museum",
+      "url": "https://www.britishmuseum.org/",
+      "category": "08_history_geography_civilization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "davidrumsey-com-david-rumsey-map-collection",
+      "title": "David Rumsey Map Collection",
+      "url": "https://www.davidrumsey.com/",
+      "category": "08_history_geography_civilization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "artsandculture-google-com-google-arts-culture",
+      "title": "Google Arts & Culture",
+      "url": "https://artsandculture.google.com/",
+      "category": "08_history_geography_civilization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "earth-google-com-google-earth",
+      "title": "Google Earth",
+      "url": "https://earth.google.com/",
+      "category": "08_history_geography_civilization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "archive-org-internet-archive",
+      "title": "Internet Archive",
+      "url": "https://archive.org/",
+      "category": "08_history_geography_civilization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "sourcebooks-fordham-edu-internet-history-sourcebooks",
+      "title": "Internet History Sourcebooks",
+      "url": "https://sourcebooks.fordham.edu/",
+      "category": "08_history_geography_civilization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "loc-gov-library-of-congress",
+      "title": "Library of Congress",
+      "url": "https://www.loc.gov/",
+      "category": "08_history_geography_civilization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "naturalearthdata-com-natural-earth",
+      "title": "Natural Earth",
+      "url": "https://www.naturalearthdata.com/",
+      "category": "08_history_geography_civilization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "oldmapsonline-org-old-maps-online",
+      "title": "Old Maps Online",
+      "url": "https://www.oldmapsonline.org/",
+      "category": "08_history_geography_civilization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "openstreetmap-org-openstreetmap",
+      "title": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/",
+      "category": "08_history_geography_civilization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "gutenberg-org-project-gutenberg",
+      "title": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/",
+      "category": "08_history_geography_civilization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "si-edu-smithsonian",
+      "title": "Smithsonian",
+      "url": "https://www.si.edu/",
+      "category": "08_history_geography_civilization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "metmuseum-org-the-met-collection",
+      "title": "The Met Collection",
+      "url": "https://www.metmuseum.org/art/collection",
+      "category": "08_history_geography_civilization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "whc-unesco-org-unesco-world-heritage",
+      "title": "UNESCO World Heritage",
+      "url": "https://whc.unesco.org/",
+      "category": "08_history_geography_civilization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "worldhistory-org-world-history-encyclopedia",
+      "title": "World History Encyclopedia",
+      "url": "https://www.worldhistory.org/",
+      "category": "08_history_geography_civilization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "apa-org-american-psychological-association",
+      "title": "American Psychological Association",
+      "url": "https://www.apa.org/",
+      "category": "10_social_sciences_economics_organization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "bea-gov-bea",
+      "title": "BEA",
+      "url": "https://www.bea.gov/",
+      "category": "10_social_sciences_economics_organization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "fred-stlouisfed-org-fred",
+      "title": "FRED",
+      "url": "https://fred.stlouisfed.org/",
+      "category": "10_social_sciences_economics_organization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "hbr-org-harvard-business-review",
+      "title": "Harvard Business Review",
+      "url": "https://hbr.org/",
+      "category": "10_social_sciences_economics_organization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "imf-org-imf-data",
+      "title": "IMF Data",
+      "url": "https://www.imf.org/en/Data",
+      "category": "10_social_sciences_economics_organization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "sloanreview-mit-edu-mit-sloan-management-review",
+      "title": "MIT Sloan Management Review",
+      "url": "https://sloanreview.mit.edu/",
+      "category": "10_social_sciences_economics_organization_studies",
+      "source_type": "learning_or_institutional",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "nber-org-nber",
+      "title": "NBER",
+      "url": "https://www.nber.org/",
+      "category": "10_social_sciences_economics_organization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "nngroup-com-nielsen-norman-group",
+      "title": "Nielsen Norman Group",
+      "url": "https://www.nngroup.com/",
+      "category": "10_social_sciences_economics_organization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "data-oecd-org-oecd-data",
+      "title": "OECD Data",
+      "url": "https://data.oecd.org/",
+      "category": "10_social_sciences_economics_organization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "ourworldindata-org-our-world-in-data",
+      "title": "Our World in Data",
+      "url": "https://ourworldindata.org/",
+      "category": "10_social_sciences_economics_organization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "pewresearch-org-pew-research-center",
+      "title": "Pew Research Center",
+      "url": "https://www.pewresearch.org/",
+      "category": "10_social_sciences_economics_organization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "ssrn-com-ssrn",
+      "title": "SSRN",
+      "url": "https://www.ssrn.com/",
+      "category": "10_social_sciences_economics_organization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "data-worldbank-org-world-bank-data",
+      "title": "World Bank Data",
+      "url": "https://data.worldbank.org/",
+      "category": "10_social_sciences_economics_organization_studies",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "dictionary-cambridge-org-cambridge-dictionary",
+      "title": "Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/",
+      "category": "12_education_language_learning_lifelong_development",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "coursera-org-coursera",
+      "title": "Coursera",
+      "url": "https://www.coursera.org/",
+      "category": "12_education_language_learning_lifelong_development",
+      "source_type": "learning_or_institutional",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "deepl-com-deepl-translate",
+      "title": "DeepL Translate",
+      "url": "https://www.deepl.com/translator",
+      "category": "12_education_language_learning_lifelong_development",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "duolingo-com-duolingo",
+      "title": "Duolingo",
+      "url": "https://www.duolingo.com/",
+      "category": "12_education_language_learning_lifelong_development",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "edx-org-edx",
+      "title": "edX",
+      "url": "https://www.edx.org/",
+      "category": "12_education_language_learning_lifelong_development",
+      "source_type": "learning_or_institutional",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "app-grammarly-com-grammarly",
+      "title": "Grammarly",
+      "url": "https://app.grammarly.com/",
+      "category": "12_education_language_learning_lifelong_development",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "ielts-org-ielts",
+      "title": "IELTS",
+      "url": "https://www.ielts.org/",
+      "category": "12_education_language_learning_lifelong_development",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "khanacademy-org-khan-academy",
+      "title": "Khan Academy",
+      "url": "https://www.khanacademy.org/",
+      "category": "12_education_language_learning_lifelong_development",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "ocw-mit-edu-mit-opencourseware",
+      "title": "MIT OpenCourseWare",
+      "url": "https://ocw.mit.edu/",
+      "category": "12_education_language_learning_lifelong_development",
+      "source_type": "learning_or_institutional",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "open-edu-openlearn",
+      "title": "OpenLearn",
+      "url": "https://www.open.edu/openlearn/",
+      "category": "12_education_language_learning_lifelong_development",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "ets-org-toefl",
+      "title": "TOEFL",
+      "url": "https://www.ets.org/toefl.html",
+      "category": "12_education_language_learning_lifelong_development",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "basic-smartedu-cn",
+      "title": "国家中小学智慧教育平台",
+      "url": "https://basic.smartedu.cn/",
+      "category": "12_education_language_learning_lifelong_development",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "smartedu-cn",
+      "title": "国家智慧教育公共服务平台",
+      "url": "https://smartedu.cn/",
+      "category": "12_education_language_learning_lifelong_development",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "vocational-smartedu-cn",
+      "title": "国家职业教育智慧教育平台",
+      "url": "https://vocational.smartedu.cn/",
+      "category": "12_education_language_learning_lifelong_development",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "chinaooc-com-cn",
+      "title": "国家高等教育智慧教育平台",
+      "url": "https://www.chinaooc.com.cn/",
+      "category": "12_education_language_learning_lifelong_development",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "degree-qingshuxuetang-com",
+      "title": "太原理工大学学位入口",
+      "url": "https://degree.qingshuxuetang.com/tyut/Student/Home",
+      "category": "12_education_language_learning_lifelong_development",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "eur-lex-europa-eu-eur-lex",
+      "title": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/",
+      "category": "13_law_standards_public_services_compliance",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "findlaw-com-findlaw",
+      "title": "FindLaw",
+      "url": "https://www.findlaw.com/",
+      "category": "13_law_standards_public_services_compliance",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "govinfo-gov-govinfo",
+      "title": "GovInfo",
+      "url": "https://www.govinfo.gov/",
+      "category": "13_law_standards_public_services_compliance",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "standards-ieee-org-ieee-standards",
+      "title": "IEEE Standards",
+      "url": "https://standards.ieee.org/",
+      "category": "13_law_standards_public_services_compliance",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "iso-org-iso",
+      "title": "ISO",
+      "url": "https://www.iso.org/",
+      "category": "13_law_standards_public_services_compliance",
+      "source_type": "standards_body",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "justia-com-justia",
+      "title": "Justia",
+      "url": "https://www.justia.com/",
+      "category": "13_law_standards_public_services_compliance",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "law-cornell-edu-lii-cornell-law-school",
+      "title": "LII - Cornell Law School",
+      "url": "https://www.law.cornell.edu/",
+      "category": "13_law_standards_public_services_compliance",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "nist-gov-nist-cybersecurity",
+      "title": "NIST Cybersecurity",
+      "url": "https://www.nist.gov/cybersecurity",
+      "category": "13_law_standards_public_services_compliance",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "w3-org-w3c-standards",
+      "title": "W3C Standards",
+      "url": "https://www.w3.org/standards/",
+      "category": "13_law_standards_public_services_compliance",
+      "source_type": "standards_body",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "wenshu-court-gov-cn",
+      "title": "中国裁判文书网",
+      "url": "https://wenshu.court.gov.cn/",
+      "category": "13_law_standards_public_services_compliance",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "std-samr-gov-cn",
+      "title": "全国标准信息公共服务平台",
+      "url": "https://std.samr.gov.cn/",
+      "category": "13_law_standards_public_services_compliance",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "pkulaw-com",
+      "title": "北大法宝",
+      "url": "https://www.pkulaw.com/",
+      "category": "13_law_standards_public_services_compliance",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "gsxt-gov-cn",
+      "title": "国家企业信用信息公示系统",
+      "url": "https://www.gsxt.gov.cn/index",
+      "category": "13_law_standards_public_services_compliance",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "gjzwfw-gov-cn",
+      "title": "国家政务服务平台",
+      "url": "https://gjzwfw.www.gov.cn/",
+      "category": "13_law_standards_public_services_compliance",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "alibabacloud-com-alibaba-cloud",
+      "title": "Alibaba Cloud（国际站）",
+      "url": "https://www.alibabacloud.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "aws-amazon-com-amazon-web-services",
+      "title": "Amazon Web Services",
+      "url": "https://aws.amazon.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "amd-com-amd",
+      "title": "AMD",
+      "url": "https://www.amd.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "apple-com-apple",
+      "title": "Apple",
+      "url": "https://www.apple.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "arm-com-arm",
+      "title": "Arm",
+      "url": "https://www.arm.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "arstechnica-com-ars-technica",
+      "title": "Ars Technica",
+      "url": "https://arstechnica.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "cloudflare-com-cloudflare",
+      "title": "Cloudflare",
+      "url": "https://www.cloudflare.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "google-com-google",
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "cloud-google-com-google-cloud",
+      "title": "Google Cloud",
+      "url": "https://cloud.google.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "news-ycombinator-com-hacker-news",
+      "title": "Hacker News",
+      "url": "https://news.ycombinator.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "huaweicloud-com-huawei-cloud",
+      "title": "Huawei Cloud（国际站）",
+      "url": "https://www.huaweicloud.com/intl/en-us/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "ibm-com-ibm",
+      "title": "IBM",
+      "url": "https://www.ibm.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "spectrum-ieee-org-ieee-spectrum",
+      "title": "IEEE Spectrum",
+      "url": "https://spectrum.ieee.org/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "intel-com-intel",
+      "title": "Intel",
+      "url": "https://www.intel.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "about-meta-com-meta",
+      "title": "Meta",
+      "url": "https://about.meta.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "microsoft-com-microsoft",
+      "title": "Microsoft",
+      "url": "https://www.microsoft.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "azure-microsoft-com-microsoft-azure",
+      "title": "Microsoft Azure",
+      "url": "https://azure.microsoft.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "technologyreview-com-mit-technology-review",
+      "title": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "nvidia-com-nvidia",
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "oracle-com-oracle-cloud",
+      "title": "Oracle Cloud",
+      "url": "https://www.oracle.com/cloud/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "producthunt-com-product-hunt",
+      "title": "Product Hunt",
+      "url": "https://www.producthunt.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "techcrunch-com-techcrunch",
+      "title": "TechCrunch",
+      "url": "https://techcrunch.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "tencentcloud-com-tencent-cloud",
+      "title": "Tencent Cloud（国际站）",
+      "url": "https://www.tencentcloud.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "tsmc-com-tsmc",
+      "title": "TSMC",
+      "url": "https://www.tsmc.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "huaweicloud-com",
+      "title": "华为云（中国站）",
+      "url": "https://www.huaweicloud.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "cloud-tencent-com",
+      "title": "腾讯云（中国站）",
+      "url": "https://cloud.tencent.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "aliyun-com",
+      "title": "阿里云（中国站）",
+      "url": "https://www.aliyun.com/",
+      "category": "15_enterprises_products_industries_technology_ecosystems",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "bilibili-com-bilibili",
+      "title": "Bilibili",
+      "url": "https://www.bilibili.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "bilibili-tv-bilibili-tv",
+      "title": "Bilibili TV（国际版）",
+      "url": "https://www.bilibili.tv/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "tv-cctv-com-cctv",
+      "title": "CCTV",
+      "url": "https://tv.cctv.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "zh-cn-emeditor-com-emeditor",
+      "title": "EmEditor",
+      "url": "https://zh-cn.emeditor.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "fifa-com-fifa",
+      "title": "FIFA",
+      "url": "https://www.fifa.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "archive-org-internet-archive-audio",
+      "title": "Internet Archive Audio",
+      "url": "https://archive.org/details/audio",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "justwatch-com-justwatch",
+      "title": "JustWatch",
+      "url": "https://www.justwatch.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "libreoffice-org-libreoffice",
+      "title": "LibreOffice",
+      "url": "https://www.libreoffice.org/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "microsoft-com-microsoft-365-free",
+      "title": "Microsoft 365 Free",
+      "url": "https://www.microsoft.com/microsoft-365/free-office-online-for-the-web",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "mmo-population-com-mmo-population",
+      "title": "MMO Population",
+      "url": "https://mmo-population.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "nba-com-nba",
+      "title": "NBA",
+      "url": "https://www.nba.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "obsproject-com-obs-studio",
+      "title": "OBS Studio",
+      "url": "https://obsproject.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "olympics-com-olympics",
+      "title": "Olympics",
+      "url": "https://olympics.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "onlyoffice-com-onlyoffice-desktop-editors",
+      "title": "ONLYOFFICE Desktop Editors",
+      "url": "https://www.onlyoffice.com/desktop.aspx",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "plex-tv-plex",
+      "title": "Plex",
+      "url": "https://www.plex.tv/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "pluto-tv-pluto-tv",
+      "title": "Pluto TV",
+      "url": "https://pluto.tv/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "sandboxie-plus-com-sandboxie-plus",
+      "title": "Sandboxie-Plus",
+      "url": "https://sandboxie-plus.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "smallpdf-com-smallpdf",
+      "title": "Smallpdf",
+      "url": "https://smallpdf.com/cn",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "open-spotify-com-spotify",
+      "title": "Spotify",
+      "url": "https://open.spotify.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "stremio-com-stremio",
+      "title": "Stremio",
+      "url": "https://www.stremio.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "tubitv-com-tubi",
+      "title": "Tubi",
+      "url": "https://tubitv.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "github-com-umi-ocr",
+      "title": "Umi-OCR",
+      "url": "https://github.com/hiroi-sora/Umi-OCR",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "canonical_repository_or_platform",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "wetv-vip-wetv",
+      "title": "WeTV（腾讯视频国际版）",
+      "url": "https://wetv.vip/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "youtube-com-youtube",
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "woobx-cn",
+      "title": "一个木函",
+      "url": "https://woobx.cn/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "ximalaya-com",
+      "title": "喜马拉雅",
+      "url": "https://www.ximalaya.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "cnr-cn",
+      "title": "央广网",
+      "url": "https://www.cnr.cn/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "zhixi-com",
+      "title": "知犀思维导图",
+      "url": "https://www.zhixi.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "v-qq-com",
+      "title": "腾讯视频（中国站）",
+      "url": "https://v.qq.com/",
+      "category": "16_media_sports_entertainment_life_resources",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "archdaily-com-archdaily",
+      "title": "ArchDaily",
+      "url": "https://www.archdaily.com/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "behance-net-behance",
+      "title": "Behance",
+      "url": "https://www.behance.net/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "brookings-edu-brookings",
+      "title": "Brookings",
+      "url": "https://www.brookings.edu/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "comparativeconstitutionsproject-org-comparative-constitutions-project",
+      "title": "Comparative Constitutions Project",
+      "url": "https://comparativeconstitutionsproject.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "complexityexplorer-org-complexity-explorer",
+      "title": "Complexity Explorer",
+      "url": "https://www.complexityexplorer.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "connectedpapers-com-connected-papers",
+      "title": "Connected Papers",
+      "url": "https://www.connectedpapers.com/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "csis-org-csis",
+      "title": "CSIS",
+      "url": "https://www.csis.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "dezeen-com-dezeen",
+      "title": "Dezeen",
+      "url": "https://www.dezeen.com/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "dribbble-com-dribbble",
+      "title": "Dribbble",
+      "url": "https://dribbble.com/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "europeana-eu-europeana",
+      "title": "Europeana",
+      "url": "https://www.europeana.eu/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "ec-europa-eu-eurostat",
+      "title": "Eurostat",
+      "url": "https://ec.europa.eu/eurostat",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "figma-com-figma",
+      "title": "Figma",
+      "url": "https://www.figma.com/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "fontawesome-com-font-awesome",
+      "title": "Font Awesome",
+      "url": "https://fontawesome.com/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "fullfact-org-full-fact",
+      "title": "Full Fact",
+      "url": "https://fullfact.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "toolbox-google-com-google-fact-check-explorer",
+      "title": "Google Fact Check Explorer",
+      "url": "https://toolbox.google.com/factcheck/explorer",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "fonts-google-com-google-fonts",
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "iiss-org-iiss",
+      "title": "IISS",
+      "url": "https://www.iiss.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "archive-org-internet-archive-moving-image",
+      "title": "Internet Archive Moving Image",
+      "url": "https://archive.org/details/movies",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "iep-utm-edu-internet-encyclopedia-of-philosophy",
+      "title": "Internet Encyclopedia of Philosophy",
+      "url": "https://iep.utm.edu/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "loc-gov-library-of-congress-classification-outline",
+      "title": "Library of Congress Classification Outline",
+      "url": "https://www.loc.gov/catdir/cpso/lcco/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "markdownguide-org-markdown-guide",
+      "title": "Markdown Guide",
+      "url": "https://www.markdownguide.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "mediabiasfactcheck-com-media-bias-fact-check",
+      "title": "Media Bias/Fact Check",
+      "url": "https://mediabiasfactcheck.com/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "moma-org-moma",
+      "title": "MoMA",
+      "url": "https://www.moma.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "mythopedia-com-mythopedia",
+      "title": "Mythopedia",
+      "url": "https://mythopedia.com/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "nces-ed-gov-nces-cip",
+      "title": "NCES CIP",
+      "url": "https://nces.ed.gov/ipeds/cipcode/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "oecd-org-oecd",
+      "title": "OECD",
+      "url": "https://www.oecd.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "oecd-org-oecd-frascati-manual",
+      "title": "OECD Frascati Manual",
+      "url": "https://www.oecd.org/en/publications/frascati-manual-2015_9789264239012-en.html",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "osf-io-open-science-framework",
+      "title": "Open Science Framework",
+      "url": "https://osf.io/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "oxfordlearnersdictionaries-com-oxford-learner-s-dictionaries",
+      "title": "Oxford Learner's Dictionaries",
+      "url": "https://www.oxfordlearnersdictionaries.com/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "perseus-tufts-edu-perseus-digital-library",
+      "title": "Perseus Digital Library",
+      "url": "https://www.perseus.tufts.edu/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "philpapers-org-philpapers",
+      "title": "PhilPapers",
+      "url": "https://philpapers.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "poetryfoundation-org-poetry-foundation",
+      "title": "Poetry Foundation",
+      "url": "https://www.poetryfoundation.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "owl-purdue-edu-purdue-owl",
+      "title": "Purdue OWL",
+      "url": "https://owl.purdue.edu/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "rand-org-rand",
+      "title": "RAND",
+      "url": "https://www.rand.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "researchrabbit-ai-research-rabbit",
+      "title": "Research Rabbit",
+      "url": "https://www.researchrabbit.ai/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "rijksmuseum-nl-rijksmuseum",
+      "title": "Rijksmuseum",
+      "url": "https://www.rijksmuseum.nl/en",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "sacred-texts-com-sacred-texts-archive",
+      "title": "Sacred Texts Archive",
+      "url": "https://sacred-texts.com/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "santafe-edu-santa-fe-institute",
+      "title": "Santa Fe Institute",
+      "url": "https://www.santafe.edu/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "sipri-org-sipri",
+      "title": "SIPRI",
+      "url": "https://www.sipri.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "snopes-com-snopes",
+      "title": "Snopes",
+      "url": "https://www.snopes.com/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "plato-stanford-edu-stanford-encyclopedia-of-philosophy",
+      "title": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "learning_or_institutional",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "thesystemsthinker-com-the-systems-thinker",
+      "title": "The Systems Thinker",
+      "url": "https://thesystemsthinker.com/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "theoi-com-theoi-greek-mythology",
+      "title": "Theoi Greek Mythology",
+      "url": "https://www.theoi.com/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "unesdoc-unesco-org-unesco-isced-f-2013",
+      "title": "UNESCO ISCED-F 2013",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000228085",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "un-org-united-nations",
+      "title": "United Nations",
+      "url": "https://www.un.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "wikisource-org-wikisource",
+      "title": "Wikisource",
+      "url": "https://wikisource.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "wiktionary-org-wiktionary",
+      "title": "Wiktionary",
+      "url": "https://www.wiktionary.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "worldbank-org-world-bank",
+      "title": "World Bank",
+      "url": "https://www.worldbank.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "zotero-org-zotero",
+      "title": "Zotero",
+      "url": "https://www.zotero.org/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    },
+    {
+      "id": "hellofont-cn",
+      "title": "字由",
+      "url": "https://www.hellofont.cn/",
+      "category": "17_methodology_cognition_research_tools",
+      "source_type": "official_or_canonical_site",
+      "public_safe": true,
+      "official_or_canonical": true
+    }
+  ]
+}
