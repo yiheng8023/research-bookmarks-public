@@ -215,6 +215,13 @@ def verify_relationship_docs() -> None:
     for phrase in ["research-bookmarks", "resource-radar", "public-safe", "private"]:
         if phrase not in combined:
             fail(f"relationship docs missing required phrase: {phrase}")
+    stale_phrases = [
+        "may remain private while it is staged",
+        "可以暂时保持 private",
+    ]
+    for phrase in stale_phrases:
+        if phrase in combined:
+            fail(f"stale public-visibility phrase remains: {phrase}")
 
 
 def main() -> None:

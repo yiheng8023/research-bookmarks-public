@@ -4,7 +4,9 @@ English | [简体中文](README.zh-CN.md)
 
 Public-safe bookmark catalog, source taxonomy, and browser-importable HTML projection for research, engineering, knowledge work, and resource discovery.
 
-Note: `public` describes the content boundary. The repository may remain private while it is staged, but its contents are maintained as public-safe so it can be published later without exposing private bookmark data.
+Note: this repository is public. `public` describes both the current repository
+visibility and the content boundary: it contains only the public-safe bookmark
+projection, not the private browser import or personal bookmark overlay.
 
 ## Repository Role
 
