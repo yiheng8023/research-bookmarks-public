@@ -8,9 +8,19 @@ Note: this repository is public. `public` describes both the current repository
 visibility and the content boundary: it contains only the public-safe bookmark
 projection, not the private browser import or personal bookmark overlay.
 
+## Start here
+
+| If you want to... | Go here |
+| --- | --- |
+| Import the bookmark output | [`exports/research-engineering-bookmarks-public.html`](exports/research-engineering-bookmarks-public.html) |
+| Review the structured source list | [`data/public-sources.json`](data/public-sources.json) |
+| Understand the taxonomy | [`data/taxonomy.json`](data/taxonomy.json) |
+| Check the generated evidence | [`data/projection-report.json`](data/projection-report.json) |
+| Understand the full system | [`open-resource-governance/docs/system-topology.md`](https://github.com/yiheng8023/open-resource-governance/blob/main/docs/system-topology.md) |
+
 ## System context
 
-This repository is the public bookmark-output lane in the
+This repository is the public bookmark-output workstream in the
 [`open-resource-governance`](https://github.com/yiheng8023/open-resource-governance)
 ecosystem.
 
@@ -19,10 +29,10 @@ open-resource-governance
   -> maps the repository family, public/private boundary, and release gates
 
 research-bookmarks-public
-  -> owns public-safe source records, taxonomy, projection evidence, and generated HTML
+  -> owns public-safe source records, taxonomy, output evidence, and generated HTML
 
 private research-bookmarks
-  -> owns complete imports, private overlays, audits, and declassification inputs
+  -> owns complete imports, private content, audits, and declassification inputs
 
 resource-radar-public / private radar
   -> may reuse bookmark taxonomy and public sources for broader discovery
@@ -34,7 +44,7 @@ want the whole system map, see
 
 ## Repository Role
 
-This repository owns the public-safe bookmark projection. It provides:
+This repository owns the public-safe bookmark output. It provides:
 
 - a reusable taxonomy;
 - a structured public source catalog;
@@ -47,7 +57,7 @@ It is not a dump of a user's private browser bookmarks.
 
 - `data/taxonomy.json`: broad resource taxonomy aligned with the resource-radar domain model.
 - `data/public-sources.json`: reviewed public-safe official or canonical sources.
-- `data/projection-report.json`: aggregate evidence for the v1.2 private-source to public-projection conversion.
+- `data/projection-report.json`: aggregate evidence for the v1.2 private-source to public-output conversion.
 - `exports/research-engineering-bookmarks-public.html`: generated bookmark HTML that users can import into a browser.
 - `scripts/build_public_bookmarks.py`: deterministic exporter from structured sources to HTML.
 - `scripts/build_projection_report.py`: deterministic projection report generator.
@@ -66,13 +76,13 @@ It is not a dump of a user's private browser bookmarks.
 
 ```text
 research-bookmarks
-  -> private source of truth for complete imports, overlays, audits, and declassification inputs
+  -> private source of truth for complete imports, private content, audits, and declassification inputs
 
 research-bookmarks-public
   -> public-safe taxonomy, structured official/canonical sources, deterministic HTML export
 
 resource-radar
-  -> discovery, normalization, scoring, lifecycle state, summaries, and broader projections
+  -> discovery, normalization, scoring, lifecycle state, summaries, and broader resource reports
 
 open-resource-governance
   -> public governance hub and launch/readiness material
@@ -86,8 +96,8 @@ The design follows four constraints:
 
 1. Users need a real importable bookmark artifact, not only abstract rules.
 2. HTML is useful as an output, but structured data must remain the source.
-3. Public projections must not leak local services, account/session URLs, private preferences, or low-trust fallback resources.
-4. `resource-radar` can automate discovery and lifecycle, but this repository remains the public bookmark projection lane.
+3. Public outputs must not leak local services, account/session URLs, private preferences, or low-trust fallback resources.
+4. `resource-radar` can automate discovery and lifecycle, but this repository remains the public bookmark-output workstream.
 
 See [docs/design-basis.md](docs/design-basis.md).
 

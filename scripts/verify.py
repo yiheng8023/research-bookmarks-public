@@ -218,9 +218,9 @@ def verify_relationship_docs() -> None:
     for phrase in [
         "System context",
         "open-resource-governance/docs/system-topology.md",
-        "public bookmark-output lane",
+        "public bookmark-output workstream",
         "系统位置",
-        "公开书签产出 lane",
+        "公开书签产出链路",
     ]:
         if phrase not in combined:
             fail(f"relationship docs missing system-context phrase: {phrase}")
