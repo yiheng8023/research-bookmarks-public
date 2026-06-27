@@ -7,6 +7,29 @@
 说明：本仓库现在是公开仓。`public` 同时描述当前仓库可见性和内容边界：
 这里只包含公开安全的书签投影，不包含私有浏览器导入或个人书签 overlay。
 
+## 系统位置
+
+本仓库是
+[`open-resource-governance`](https://github.com/yiheng8023/open-resource-governance)
+生态中的公开书签产出 lane。
+
+```text
+open-resource-governance
+  -> 负责仓库家族地图、公开/私有边界和发布闸门
+
+research-bookmarks-public
+  -> 负责公开安全来源记录、分类、投影证据和生成 HTML
+
+私有 research-bookmarks
+  -> 负责完整导入、私有 overlay、审计和脱敏输入
+
+resource-radar-public / 私有 resource-radar
+  -> 可以复用书签分类和公开来源，做更宽域的资源发现
+```
+
+如果你只想使用可导入浏览器的公开书签产物，从本仓开始即可。若要理解整个系统地图，请看
+[`open-resource-governance/docs/system-topology.md`](https://github.com/yiheng8023/open-resource-governance/blob/main/docs/system-topology.md)。
+
 ## 仓库职责
 
 本仓库负责公开安全的书签投影，提供：

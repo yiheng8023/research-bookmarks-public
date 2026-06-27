@@ -8,6 +8,30 @@ Note: this repository is public. `public` describes both the current repository
 visibility and the content boundary: it contains only the public-safe bookmark
 projection, not the private browser import or personal bookmark overlay.
 
+## System context
+
+This repository is the public bookmark-output lane in the
+[`open-resource-governance`](https://github.com/yiheng8023/open-resource-governance)
+ecosystem.
+
+```text
+open-resource-governance
+  -> maps the repository family, public/private boundary, and release gates
+
+research-bookmarks-public
+  -> owns public-safe source records, taxonomy, projection evidence, and generated HTML
+
+private research-bookmarks
+  -> owns complete imports, private overlays, audits, and declassification inputs
+
+resource-radar-public / private radar
+  -> may reuse bookmark taxonomy and public sources for broader discovery
+```
+
+If you only want the importable bookmark artifact, use this repository. If you
+want the whole system map, see
+[`open-resource-governance/docs/system-topology.md`](https://github.com/yiheng8023/open-resource-governance/blob/main/docs/system-topology.md).
+
 ## Repository Role
 
 This repository owns the public-safe bookmark projection. It provides:

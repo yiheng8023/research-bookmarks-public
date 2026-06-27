@@ -215,6 +215,15 @@ def verify_relationship_docs() -> None:
     for phrase in ["research-bookmarks", "resource-radar", "public-safe", "private"]:
         if phrase not in combined:
             fail(f"relationship docs missing required phrase: {phrase}")
+    for phrase in [
+        "System context",
+        "open-resource-governance/docs/system-topology.md",
+        "public bookmark-output lane",
+        "系统位置",
+        "公开书签产出 lane",
+    ]:
+        if phrase not in combined:
+            fail(f"relationship docs missing system-context phrase: {phrase}")
     stale_phrases = [
         "may remain private while it is staged",
         "可以暂时保持 private",
