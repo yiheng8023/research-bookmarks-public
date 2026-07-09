@@ -1,6 +1,12 @@
 {
   "schema_version": 1,
-  "source": "research_engineering_bookmarks_2026-06-26_v1.2_final.html",
+  "source": "private_bookmark_baseline_v1.2_final_public_safe_projection",
+  "source_lineage": {
+    "private_repository": "research-bookmarks",
+    "initial_imported_at": "2026-06-26",
+    "initial_version": "v1.2-final",
+    "projection_mode": "historical public-safe projection, not live private overlay sync"
+  },
   "selection_policy": "public_safe_official_or_canonical_projection",
   "counts": {
     "source_entries": 389,

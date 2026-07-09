@@ -44,10 +44,11 @@ python -B scripts/simulate_user_flow.py
 
 ## v1.2 Baseline Closeout
 
-The current public projection is based on the private
-`research_engineering_bookmarks_2026-06-26_v1.2_final.html` baseline. The
-private source keeps the full import and audit evidence; this public repository
-keeps only structured public-safe sources, aggregate projection evidence, and
-generated browser-importable output.
+The current public projection is based on the private `v1.2-final` bookmark
+baseline lineage. The private source keeps the full import, later private
+overlays, and audit evidence; this public repository keeps only structured
+public-safe sources, aggregate projection evidence, and generated
+browser-importable output. It is not a live mirror of the current private
+bookmark overlay.
 
 See [`projection-closeout.md`](projection-closeout.md).

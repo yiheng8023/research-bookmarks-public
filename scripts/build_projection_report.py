@@ -44,6 +44,7 @@ def build_report() -> dict:
         "schema_version": 1,
         "source_baseline": {
             "name": sources_data["source"],
+            "lineage": sources_data.get("source_lineage", {}),
             "source_entries": sources_data["counts"]["source_entries"],
             "selection_policy": sources_data["selection_policy"]
         },
@@ -65,7 +66,8 @@ def build_report() -> dict:
         },
         "notes": [
             "The public projection is generated from structured data, not hand-edited HTML.",
-            "The private v1.2 browser export remains private; this report exposes only public-safe aggregate counts.",
+            "The private baseline and later private overlays remain private; this report exposes only public-safe aggregate counts.",
+            "This repository is not a live mirror of the current private bookmark overlay.",
             "Folder counts are export-parser counts and may differ from private browser folder-heading counts."
         ]
     }

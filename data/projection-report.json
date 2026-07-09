@@ -30,7 +30,8 @@
   },
   "notes": [
     "The public projection is generated from structured data, not hand-edited HTML.",
-    "The private v1.2 browser export remains private; this report exposes only public-safe aggregate counts.",
+    "The private baseline and later private overlays remain private; this report exposes only public-safe aggregate counts.",
+    "This repository is not a live mirror of the current private bookmark overlay.",
     "Folder counts are export-parser counts and may differ from private browser folder-heading counts."
   ],
   "public_projection": {
@@ -42,7 +43,13 @@
   },
   "schema_version": 1,
   "source_baseline": {
-    "name": "research_engineering_bookmarks_2026-06-26_v1.2_final.html",
+    "lineage": {
+      "initial_imported_at": "2026-06-26",
+      "initial_version": "v1.2-final",
+      "private_repository": "research-bookmarks",
+      "projection_mode": "historical public-safe projection, not live private overlay sync"
+    },
+    "name": "private_bookmark_baseline_v1.2_final_public_safe_projection",
     "selection_policy": "public_safe_official_or_canonical_projection",
     "source_entries": 389
   },

@@ -3,12 +3,12 @@
 This repository is not a hand-maintained bookmark dump. It is the public-safe
 projection of a private bookmark baseline.
 
-## Source baseline
+## Source Baseline
 
-The current projection is based on the private source file:
+The current projection is based on the private bookmark baseline lineage:
 
 ```text
-research_engineering_bookmarks_2026-06-26_v1.2_final.html
+research-bookmarks / v1.2-final / imported 2026-06-26
 ```
 
 The private source repository records:
@@ -19,6 +19,8 @@ The private source repository records:
 - private import and declassification evidence.
 
 Those private files are intentionally not copied into this public repository.
+Later private bookmark overlays remain private unless they pass a separate
+declassification review.
 
 ## Public projection
 
