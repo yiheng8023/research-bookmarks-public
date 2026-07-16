@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "design_basis": "Aligned with resource-radar universal resource taxonomy; software engineering is priority, not boundary.",
+  "design_basis": "Independent broad public resource taxonomy; software engineering is a priority lane, not the boundary.",
   "taxonomy": [
     {
       "id": "00_workspace_common_entrypoints",

@@ -4,16 +4,17 @@
 
 ## Source Model
 
-The private source of truth is `research-bookmarks`. It can contain full browser exports, personal folder structure, review notes, private overlays, and non-public context.
+`data/public-sources.json` and `data/taxonomy.json` are this repository's own
+public source surfaces. `research-bookmarks` is an optional source of reviewed
+declassification candidates, not a runtime dependency or authority provider.
 
 This repository is the public-safe projection:
 
 ```text
-research-bookmarks
-  -> full private imports and review evidence
-  -> declassification/filtering gate
-  -> research-bookmarks-public
-  -> structured public sources + generated browser-importable HTML
+optional reviewed candidate
+  -> repository-local admission and declassification gate
+  -> structured public sources
+  -> generated browser-importable HTML
 ```
 
 ## Design Rules
@@ -22,7 +23,9 @@ research-bookmarks
 2. Public output must be generated from structured data.
 3. The generated HTML is a product artifact, not the source of truth.
 4. Local services, account/session URLs, private preferences, low-trust fallback links, and hard-excluded vendors must not enter the public projection.
-5. `resource-radar` owns discovery, scoring, lifecycle, and wider automation. This repository owns the public-safe bookmark catalog and import/export contract.
+5. This repository owns its public-safe catalogue and import/export contract;
+   general-purpose discovery or ranking is optional external input, never a
+   required control plane.
 
 ## Why HTML Is Checked In
 

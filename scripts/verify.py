@@ -142,10 +142,12 @@ def verify_projection_report() -> None:
         fail("projection report public source count does not match public-sources.json")
     if report["public_projection"]["html_links"] != public_sources:
         fail("projection report HTML link count does not match public source count")
-    if report["boundary"]["private_source_repository"] != "research-bookmarks":
-        fail("projection report private source boundary is wrong")
-    if report["boundary"]["resource_intelligence_repository"] != "resource-radar":
-        fail("projection report resource intelligence boundary is wrong")
+    if report["boundary"]["catalog_repository"] != "research-bookmarks-public":
+        fail("projection report catalog repository boundary is wrong")
+    if report["boundary"]["catalog_authority"] != "data/public-sources.json":
+        fail("projection report catalog authority is wrong")
+    if not report["boundary"]["dependency_mode"].startswith("independent"):
+        fail("projection report must declare independent dependency mode")
 
 
 def verify_no_raw_browser_exports() -> None:
@@ -212,15 +214,14 @@ def verify_relationship_docs() -> None:
             "docs/automation-validation.md",
         ]
     )
-    for phrase in ["research-bookmarks", "resource-radar", "public-safe", "private"]:
+    for phrase in ["research-bookmarks", "independent", "public-safe", "private"]:
         if phrase not in combined:
             fail(f"relationship docs missing required phrase: {phrase}")
     for phrase in [
-        "System context",
-        "open-resource-governance/docs/system-topology.md",
-        "public bookmark-output workstream",
-        "系统位置",
-        "公开书签产出链路",
+        "Repository Role",
+        "public catalogue truth",
+        "仓库职责",
+        "公开目录真值",
     ]:
         if phrase not in combined:
             fail(f"relationship docs missing system-context phrase: {phrase}")

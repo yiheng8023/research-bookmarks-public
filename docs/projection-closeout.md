@@ -46,7 +46,7 @@ Current public projection:
 - Structured public source records are the public source of truth.
 - Low-trust, local-only, private-overlay, and hard-excluded resources stay out
   of the public projection.
-- The taxonomy is aligned with the resource-radar universal domain model.
+- The taxonomy is an independently owned broad public resource model.
 - The public repository includes an importable artifact, not only abstract docs.
 - Verification checks structure, determinism, link count, forbidden patterns,
   local/private URL prefixes, and credential-looking text.
@@ -58,7 +58,7 @@ Current public projection:
 - It does not certify commercial licensing of third-party websites.
 - It does not expose private folder structure or private preference data.
 - It does not run broad discovery, scoring, freshness metabolism, or lifecycle
-  automation; that belongs in `resource-radar`.
+  automation; those remain optional external inputs with separate trust gates.
 - It does not auto-promote new sources from private imports into public output.
 
 ## Update loop

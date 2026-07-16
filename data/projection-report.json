@@ -1,9 +1,10 @@
 {
   "boundary": {
-    "private_source_repository": "research-bookmarks",
-    "public_projection_repository": "research-bookmarks-public",
-    "public_rule": "Only public-safe official or canonical sources are projected here.",
-    "resource_intelligence_repository": "resource-radar"
+    "catalog_authority": "data/public-sources.json",
+    "catalog_repository": "research-bookmarks-public",
+    "dependency_mode": "independent; no live private sync or external control plane required",
+    "private_candidate_source": "research-bookmarks (optional reviewed candidates only)",
+    "public_rule": "Only public-safe official or canonical sources are projected here."
   },
   "category_counts": {
     "00_workspace_common_entrypoints": 1,

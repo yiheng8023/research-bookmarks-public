@@ -2,122 +2,44 @@
 
 [English](README.md) | 简体中文
 
-公开安全的书签目录、来源分类和可导入浏览器的 HTML，用于研究、工程、知识工作与资源发现。
-
-说明：本仓库现在是公开仓。`public` 同时描述当前仓库可见性和内容边界：
-这里只包含公开安全的书签结果，不包含私有浏览器导入或个人书签内容。
-
-## 从这里开始
-
-| 你想做什么 | 入口 |
-| --- | --- |
-| 直接导入公开书签 | [`exports/research-engineering-bookmarks-public.html`](exports/research-engineering-bookmarks-public.html) |
-| 查看结构化来源目录 | [`data/public-sources.json`](data/public-sources.json) |
-| 理解分类体系 | [`data/taxonomy.json`](data/taxonomy.json) |
-| 查看生成证据 | [`data/projection-report.json`](data/projection-report.json) |
-| 理解整套系统 | [`open-resource-governance/docs/system-topology.md`](https://github.com/yiheng8023/open-resource-governance/blob/main/docs/system-topology.md) |
-
-## 系统位置
-
-本仓库是
-[`open-resource-governance`](https://github.com/yiheng8023/open-resource-governance)
-生态中的公开书签产出链路。
-
-```text
-open-resource-governance
-  -> 负责仓库家族地图、公开/私有边界和发布闸门
-
-research-bookmarks-public
-  -> 负责公开安全来源记录、分类、生成证据和书签 HTML
-
-私有 research-bookmarks
-  -> 负责完整导入、私有内容、审计和脱敏输入
-
-resource-radar-public / 私有 resource-radar
-  -> 可以复用书签分类和公开来源，做更宽域的资源发现
-```
-
-如果你只想使用可导入浏览器的公开书签产物，从本仓开始即可。若要理解整个系统地图，请看
-[`open-resource-governance/docs/system-topology.md`](https://github.com/yiheng8023/open-resource-governance/blob/main/docs/system-topology.md)。
+独立的公开安全资源目录与浏览器书签产物仓库。
 
 ## 仓库职责
 
-本仓库负责公开安全的书签结果，提供：
+本仓库自行管理结构化公开来源、公开 taxonomy、脱敏策略、确定性导出器、聚合证据和
+可导入浏览器的产物。构建、验证和维护当前目录不依赖中央总仓、私有 checkout 或外部发现
+服务。
 
-- 可复用分类；
-- 结构化公开来源目录；
-- 可导入浏览器的书签 HTML 确定性生成；
-- 面向公开产物的验证和用户流程模拟。
-
-它不是用户私有浏览器书签的完整导出。
-
-## 本仓库提供什么
-
-- `data/taxonomy.json`：与资源雷达领域模型对齐的宽域资源分类。
-- `data/public-sources.json`：经过审查的公开安全官方或权威来源。
-- `data/projection-report.json`：v1.2 私有来源到公开结果转换的汇总证据。
-- `exports/research-engineering-bookmarks-public.html`：可直接导入浏览器的生成书签 HTML。
-- `scripts/build_public_bookmarks.py`：结构化来源到 HTML 的确定性导出器。
-- `scripts/build_projection_report.py`：确定性投影报告生成器。
-- `scripts/simulate_user_flow.py`：面向用户导入与安全边界的模拟验证。
-- 公开/私有边界、来源策略、设计依据和同步模型文档。
-
-## 本仓库不负责什么
-
-- 完整个人浏览器书签。
-- 浏览历史、私有文件夹、私人笔记、账号状态或主观偏好。
-- 原始私有书签导入；这些属于 `research-bookmarks`。
-- 发现、评分、生命周期分析、摘要或宽域自动化；这些属于 `resource-radar`。
-- Agent Skill 准入审批；这属于 curated Skills 仓。
-
-## 与配对仓库的关系
+## 真源模型
 
 ```text
-research-bookmarks
-  -> 完整导入、私有内容、审计与脱敏输入的私有真源
-
-research-bookmarks-public
-  -> 公开安全分类、结构化官方/权威来源、确定性 HTML 导出
-
-resource-radar
-  -> 发现、归一、评分、生命周期、摘要和更宽的资源报告
-
-open-resource-governance
-  -> 公开总入口、仓库地图和发布准备证据
-```
-
-不要盲目双向同步。私有到公开必须经过过滤、审查，并通过本仓导出器重新生成。
-
-## 设计依据
-
-这套设计遵循四个约束：
-
-1. 用户需要真实可导入的书签产物，而不只是抽象规则。
-2. HTML 是有用输出，但结构化数据必须是源头。
-3. 公开结果不得泄漏本地服务、账号/session URL、私有偏好或低信任兜底资源。
-4. `resource-radar` 可以承担发现和生命周期自动化，但本仓仍是公开书签产出链路。
-
-详见 [docs/design-basis.md](docs/design-basis.md)。
-
-## 目录结构
-
-```text
-data/taxonomy.json                         公开资源分类
-data/public-sources.json                   公开安全官方/权威来源目录
-data/projection-report.json                公开汇总证据
-docs/design-basis.md                       仓库存在原因与拆分依据
-docs/automation-validation.md              验证与用户流程模拟契约
-docs/projection-closeout.md                v1.2 来源到公开结果的收官说明
-docs/public-private-boundary.md            公开/私有书签边界
-docs/private-public-sync-model.md          安全提升与同步模型
-docs/source-policy.md                      来源准入策略
+data/public-sources.json                  公开目录真值
+data/taxonomy.json                        公开 taxonomy 真值
+          |
+          v
+scripts/build_public_bookmarks.py
+scripts/build_projection_report.py
+          |
+          v
 exports/research-engineering-bookmarks-public.html
-                                            生成的可导入浏览器书签 HTML
-scripts/build_public_bookmarks.py          确定性导出器
-scripts/build_projection_report.py         确定性投影报告生成器
-scripts/simulate_user_flow.py              用户流程模拟
-scripts/verify.py                          结构、安全与确定性检查
+data/projection-report.json               派生证据
 ```
+
+当前 328 条公开来源具有 2026-06-26、389 条私有快照的历史谱系。该谱系不形成实时
+依赖或同步契约。后续私有记录必须逐条审查并在本仓准入后才会出现。
+
+## 私有输入边界
+
+`research-bookmarks` 独立管理私有书签真值，可以提交明确审查过的公开安全候选。
+本仓自行完成准入与验证；禁止镜像原始私有数据，也不会仅凭路径关系继承私仓权威。
+
+## 本仓提供什么
+
+- `data/public-sources.json`：经过审查的公开官方或规范来源。
+- `data/taxonomy.json`：宽域公开资源 taxonomy。
+- `exports/research-engineering-bookmarks-public.html`：确定性 Netscape 书签产物。
+- `data/projection-report.json`：派生聚合与边界证据。
+- 本地验证和用户流程模拟。
 
 ## 验证方式
 
@@ -135,17 +57,10 @@ python -B scripts/verify.py
 python -B scripts/simulate_user_flow.py
 ```
 
-GitHub Actions 会在 pull request 和推送到 `main` 时运行验证。
-
-## 更新规则
-
-1. 修改 `data/public-sources.json`，不要手写生成 HTML。
-2. 重新生成 `exports/research-engineering-bookmarks-public.html`。
-3. 重新生成 `data/projection-report.json`。
-4. 运行验证和用户流程模拟。
-5. 完整私有书签保留在 `research-bookmarks`。
-6. 更广义的发现、评分、生命周期和未来自动补充交给 `resource-radar`。
+所有正确性检查均可在本地完成。GitHub Actions 可以作为便利性重复执行，但不是仓库
+真值，也不是必需运行时依赖。
 
 ## 安全边界
 
-本仓按公开安全书签结果设计。任何会暴露个人偏好、私有上下文、非官方背书、本地服务状态、账号/session 数据或低信任兜底行为的书签，都应保留在 `research-bookmarks` 或私有审查队列。
+公开产物只能包含经过审查的公开安全官方或规范来源。禁止原始浏览器导出、私有目录
+结构、本地 URL、账号或 session 数据、个人偏好、低信任兜底和疑似凭据内容。

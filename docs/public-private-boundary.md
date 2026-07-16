@@ -22,7 +22,8 @@ Keep private:
 - non-official personal recommendations;
 - account-specific or session-specific URLs.
 
-The private source repository is `research-bookmarks`.
+The independent private bookmark repository is `research-bookmarks`; it is not
+required to build or verify this public catalogue.
 
 ## Promotion gate
 
@@ -32,4 +33,4 @@ Private-to-public promotion requires:
 2. confirm the source is official or clearly reviewable;
 3. check license and provenance;
 4. verify no account/session URL is present;
-5. open a reviewed pull request.
+5. record and review the admission change in this repository.

@@ -59,9 +59,10 @@ def build_report() -> dict:
         "category_counts": dict(sorted(category_counts.items())),
         "source_type_counts": dict(sorted(source_type_counts.items())),
         "boundary": {
-            "private_source_repository": "research-bookmarks",
-            "public_projection_repository": "research-bookmarks-public",
-            "resource_intelligence_repository": "resource-radar",
+            "catalog_repository": "research-bookmarks-public",
+            "catalog_authority": "data/public-sources.json",
+            "private_candidate_source": "research-bookmarks (optional reviewed candidates only)",
+            "dependency_mode": "independent; no live private sync or external control plane required",
             "public_rule": "Only public-safe official or canonical sources are projected here."
         },
         "notes": [

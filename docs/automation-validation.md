@@ -8,7 +8,7 @@ structured public sources
   -> deterministic projection report
   -> checked-in browser-importable HTML
   -> user-flow simulation
-  -> GitHub Actions verification
+  -> optional GitHub Actions repetition
 ```
 
 ## Commands
@@ -48,4 +48,4 @@ python -B scripts/simulate_user_flow.py
 - It does not verify every external website is live at runtime.
 - It does not certify commercial licensing of third-party websites.
 - It does not prove the private source repository is safe to publish.
-- It does not replace `resource-radar` discovery, scoring, lifecycle, and broader projection tests.
+- It does not provide general-purpose discovery, popularity ranking, or live-site monitoring.
