@@ -2,94 +2,53 @@
 
 [English](README.md) | 简体中文
 
-独立的公开安全资源目录与浏览器书签产物仓库。
+公开安全书签目录与可导入浏览器的 HTML 产物。
 
-## 仓库职责
+## 职责
 
-本仓库自行管理结构化公开来源、公开 taxonomy、脱敏策略、确定性导出器、聚合证据和
-可导入浏览器的产物。构建、验证和维护当前目录不依赖中央总仓、私有 checkout 或外部发现
-服务。
+本仓库独立维护结构化公开来源、公开 taxonomy、确定性浏览器导出器、聚合报告和
+可导入浏览器的产物。
 
-## 真源模型
+## 当前快照
 
-```text
-data/public-sources.json                  公开目录真值
-data/taxonomy.json                        公开 taxonomy 真值
-          |
-          v
-scripts/build_public_bookmarks.py
-scripts/build_projection_report.py
-          |
-          v
-exports/research-engineering-bookmarks-public.html
-data/projection-report.json               派生证据
-```
+- 334 条公开安全链接、97 个书签目录。
+- 最近一次命名、分类、归属和冗余审计见
+  [目录审计](docs/catalog-audit-2026-07-17.md)。
 
-当前 334 条公开来源具有 2026-06-26、389 条私有快照的历史谱系。该谱系不形成实时
-依赖或同步契约。后续私有记录必须逐条审查并在本仓准入后才会出现。
+## 核心文件
 
-## 私有输入边界
+- `data/public-sources.json`：持续维护的公开目录。
+- `data/taxonomy.json`：公开 taxonomy。
+- `exports/research-engineering-bookmarks-public.html`：可导入浏览器的产物。
+- `data/projection-report.json`：生成的计数与边界检查。
 
-`research-bookmarks` 独立管理私有书签真值，可以提交明确审查过的公开安全候选。
-本仓自行完成准入与验证；禁止镜像原始私有数据，也不会仅凭路径关系继承私仓权威。
+## 低频更新
 
-## 本仓提供什么
-
-- `data/public-sources.json`：具有规范主机、产品、入口角色、市场范围、归属状态、
-  证据和 URL 健康状态的公开安全来源；未知法律主体明确保持 `needs_review`。
-- `data/taxonomy.json`：宽域公开资源 taxonomy。
-- `exports/research-engineering-bookmarks-public.html`：确定性 Netscape 书签产物。
-- `data/projection-report.json`：派生聚合与边界证据。
-- 本地验证和用户流程模拟。
-
-## 验证方式
-
-本轮全量目录修正及仍待补证的主体归属边界记录在
-`docs/catalog-audit-2026-07-17.md`。
-
-重新生成：
+仅在公开目录变化时运行：
 
 ```bash
 python -B scripts/build_public_bookmarks.py
 python -B scripts/build_projection_report.py
-```
-
-验证：
-
-```bash
 python -B scripts/verify.py
 python -B scripts/simulate_user_flow.py
 ```
 
-所有正确性检查均可在本地完成。GitHub Actions 可以作为便利性重复执行，但不是仓库
-真值，也不是必需运行时依赖。
+## 隐私与贡献
 
-## 安全边界
-
-公开产物只能包含具有明确准入依据的公开安全来源；官方/规范来源与经过审查的二手
-参考保持不同来源类型。禁止原始浏览器导出、私有目录
-结构、本地 URL、账号或 session 数据、个人偏好、低信任兜底和疑似凭据内容。
-
-## 社区与可持续维护
-
-- 提交来源、taxonomy 或工具变更前，请先阅读[贡献说明](CONTRIBUTING.md)。
-- 按[支持说明](SUPPORT.zh-CN.md)选择合适的公开渠道，禁止披露私有书签或账号数据。
-- 参与社区须遵守[行为准则](CODE_OF_CONDUCT.md)。
-- 自愿赞助渠道及边界见[赞助说明](SPONSORING.zh-CN.md)；赞助不购买审查优先级、
-  来源准入、发布权限或对目录决策的影响力。
+`research-bookmarks` 可以提出经过审查的公开安全候选，但由本仓决定是否收录。禁止
+提交原始私有书签、目录路径、浏览历史、账号或 session 数据、凭据、私有备注和本地
+URL。小范围来源或分类修正可直接使用普通 GitHub Issue 或 Pull Request；本项目不设
+正式支持或发布周期。安全与隐私问题按 [SECURITY.md](SECURITY.md) 处理。
 
 ## 自愿赞助
 
-如果这个公开书签目录对你有帮助，并且你愿意支持项目的持续维护、文档、测试与社区
-工作，诚挚感谢任意金额的自愿赞助。赞助完全自愿，不购买支持优先级、来源准入、功能、
-发布决策或技术影响力。
+赞助完全自愿，用于支持偶尔维护；不购买支持优先级、来源准入、功能、发布或技术影响力。
 
-- 人民币赞助可以扫描下方微信支付或支付宝收款码。
-- 跨境赞助或其他受支持币种可以使用
-  [PayPal 付款链接](https://www.paypal.com/ncp/payment/LNTF8KXGJXMZY)。实际可用币种、
-  付款方式、换汇与手续费以 PayPal 结算页为准，并可能因国家或地区而异。
+- 人民币：扫描下方微信支付或支付宝收款码。
+- 其他受支持币种：使用
+  [PayPal 付款链接](https://www.paypal.com/ncp/payment/LNTF8KXGJXMZY)。
 
-付款前请核对结算页面显示的收款方。感谢你对项目的支持。
+付款前请核对结算页面显示的收款方。
 
 <table>
   <tr>
@@ -97,5 +56,3 @@ python -B scripts/simulate_user_flow.py
     <td align="center"><strong>支付宝（人民币）</strong><br><img src="docs/assets/sponsoring/alipay.png" alt="支付宝自愿赞助收款码" width="280"></td>
   </tr>
 </table>
-
-完整的自愿赞助与治理边界见[赞助说明](SPONSORING.zh-CN.md)。

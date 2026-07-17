@@ -2,111 +2,57 @@
 
 English | [简体中文](README.zh-CN.md)
 
-Independent public-safe resource catalogue and browser-bookmark artifact.
+Public-safe bookmark catalogue and browser-importable HTML export.
 
-## Repository Role
+## Role
 
-This repository owns its structured public sources, public taxonomy,
-declassification policy, deterministic exporter, aggregate evidence, and
-browser-importable artifact. It does not require a central hub, private
-checkout, or external discovery service to build, verify, or publish its
-current catalogue.
+This repository owns and maintains its structured public sources, taxonomy,
+deterministic browser exporter, aggregate report, and browser-importable
+artifact.
 
-## Source Model
+## Current snapshot
 
-```text
-data/public-sources.json                  public catalogue truth
-data/taxonomy.json                        public taxonomy truth
-          |
-          v
-scripts/build_public_bookmarks.py
-scripts/build_projection_report.py
-          |
-          v
-exports/research-engineering-bookmarks-public.html
-data/projection-report.json               derived evidence
-```
+- 334 public-safe links across 97 bookmark folders.
+- The latest naming, classification, ownership, and redundancy review is in
+  [the catalogue audit](docs/catalog-audit-2026-07-17.md).
 
-The current 334-source catalogue has historical lineage from a reviewed
-private 389-entry snapshot dated 2026-06-26. That lineage does not create a
-live dependency or synchronization contract. Later private records are absent
-until individually reviewed and admitted here.
+## Core files
 
-## Private Input Boundary
+- `data/public-sources.json`: maintained public catalogue.
+- `data/taxonomy.json`: public taxonomy.
+- `exports/research-engineering-bookmarks-public.html`: browser-importable export.
+- `data/projection-report.json`: generated counts and boundary checks.
 
-`research-bookmarks` independently owns private bookmark truth. It may propose
-explicitly reviewed public-safe candidates. This repository performs its own
-admission and verification; it never mirrors raw private data and never
-inherits private source authority by path.
+## Occasional update
 
-## What This Repository Provides
-
-- `data/public-sources.json`: reviewed public-safe sources with canonical host,
-  product, entry role, market scope, ownership status, evidence, and URL-health
-  fields. Unknown legal ownership remains explicit as `needs_review`.
-- `data/taxonomy.json`: broad public resource taxonomy.
-- `exports/research-engineering-bookmarks-public.html`: deterministic Netscape
-  bookmark artifact.
-- `data/projection-report.json`: derived aggregate and boundary evidence.
-- local verification and user-flow simulation.
-
-## Verification
-
-The current full-catalog remediation and remaining ownership-evidence boundary
-are recorded in `docs/catalog-audit-2026-07-17.md`.
-
-Regenerate:
+Run these commands only when the public catalogue changes:
 
 ```bash
 python -B scripts/build_public_bookmarks.py
 python -B scripts/build_projection_report.py
-```
-
-Verify:
-
-```bash
 python -B scripts/verify.py
 python -B scripts/simulate_user_flow.py
 ```
 
-All correctness checks are local. GitHub Actions may repeat them as a
-convenience, but it is not repository truth or a required runtime dependency.
+## Privacy and contributions
 
-## Safety Boundary
-
-Public output must contain only reviewed public-safe sources with an explicit
-admission basis; official/canonical and reviewed secondary references remain
-separate source types. Raw browser exports, private folder structure, local URLs, account or
-session data, personal preferences, low-trust fallbacks, and credential-like
-content are prohibited.
-
-## Community and Sustainability
-
-- Read [Contributing](CONTRIBUTING.md) before proposing source, taxonomy, or
-  tooling changes.
-- Use [Support](SUPPORT.md) to choose the appropriate public channel without
-  disclosing private bookmark or account data.
-- Participation is governed by the [Code of Conduct](CODE_OF_CONDUCT.md).
-- Voluntary sponsorship is described in [Sponsoring](SPONSORING.md). It does
-  not purchase review priority, source admission, release authority, or
-  influence over catalogue decisions.
+`research-bookmarks` may propose reviewed public-safe candidates, but this
+repository decides what it admits. Do not submit raw private bookmarks, folder
+paths, browsing history, account or session data, credentials, private notes,
+or local URLs. Small source and taxonomy corrections can be proposed through a
+normal GitHub issue or pull request; this project has no formal support or
+release schedule. Security and privacy reports should follow [SECURITY.md](SECURITY.md).
 
 ## Sponsor
 
-If this public bookmark catalogue is useful to you and you would like to
-support its continued maintenance, documentation, testing, and community work,
-voluntary sponsorships of any amount are sincerely appreciated. Sponsorship is
-optional and does not purchase support priority, source admission, features,
-release decisions, or technical influence.
+Sponsorship is voluntary and supports occasional maintenance. It does not buy
+support priority, source admission, features, releases, or technical influence.
 
-- For CNY sponsorships, scan the WeChat Pay or Alipay code below.
-- For cross-border sponsorships or other supported currencies, use the
+- CNY: scan the WeChat Pay or Alipay code below.
+- Other supported currencies: use the
   [PayPal payment link](https://www.paypal.com/ncp/payment/LNTF8KXGJXMZY).
-  Available currencies, payment methods, conversion, and fees are determined
-  by the PayPal checkout page and may vary by country or region.
 
-Please verify the displayed recipient before confirming a payment. Thank you
-for supporting the project.
+Verify the displayed recipient before confirming a payment.
 
 <table>
   <tr>
@@ -114,6 +60,3 @@ for supporting the project.
     <td align="center"><strong>Alipay (CNY)</strong><br><img src="docs/assets/sponsoring/alipay.png" alt="Alipay sponsorship QR code" width="280"></td>
   </tr>
 </table>
-
-See [Sponsoring](SPONSORING.md) for the complete voluntary-sponsorship and
-governance boundary.

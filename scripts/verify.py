@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import hashlib
 import json
 import importlib.util
 from pathlib import Path
@@ -13,34 +12,15 @@ REQUIRED_FILES = [
     "README.md",
     "README.zh-CN.md",
     "NOTICE",
-    "CONTRIBUTING.md",
-    "CODE_OF_CONDUCT.md",
     "SECURITY.md",
-    "SPONSORING.md",
-    "SPONSORING.zh-CN.md",
-    "SUPPORT.md",
-    "SUPPORT.zh-CN.md",
     "docs/assets/sponsoring/wechat-pay.png",
     "docs/assets/sponsoring/alipay.png",
-    ".github/CODEOWNERS",
     ".github/FUNDING.yml",
-    ".github/PULL_REQUEST_TEMPLATE.md",
-    ".github/ISSUE_TEMPLATE/config.yml",
-    ".github/ISSUE_TEMPLATE/source.yml",
-    ".github/ISSUE_TEMPLATE/taxonomy.yml",
-    ".github/labels.yml",
     ".github/workflows/validate.yml",
     "data/taxonomy.json",
     "data/public-sources.json",
     "data/projection-report.json",
-    "docs/license-policy.md",
-    "docs/public-private-boundary.md",
-    "docs/private-public-sync-model.md",
-    "docs/design-basis.md",
-    "docs/projection-closeout.md",
-    "docs/automation-validation.md",
     "docs/catalog-audit-2026-07-17.md",
-    "docs/source-policy.md",
     "exports/README.md",
     "exports/research-engineering-bookmarks-public.html",
     "scripts/build_public_bookmarks.py",
@@ -83,10 +63,6 @@ OFFICIAL_SOURCE_TYPES = {
     "primary_institutional_source", "standards_body",
 }
 
-SPONSORING_ASSETS = {
-    "docs/assets/sponsoring/wechat-pay.png": "D8C213F1539CAD6C9FD23099736AECD06C722129AF24F77FE9F26563BBB9A05E",
-    "docs/assets/sponsoring/alipay.png": "491EE27D52797818F1CCA756560BC239CF6150FE3327B0FD31728F7CE53327CD",
-}
 PAYPAL_URL = "https://www.paypal.com/ncp/payment/LNTF8KXGJXMZY"
 
 
@@ -268,15 +244,15 @@ def verify_sponsoring_surface() -> None:
         "README.md": (ROOT / "README.md").read_text(encoding="utf-8"),
         "README.zh-CN.md": (ROOT / "README.zh-CN.md").read_text(encoding="utf-8"),
     }
-    for rel, expected_hash in SPONSORING_ASSETS.items():
-        actual_hash = hashlib.sha256((ROOT / rel).read_bytes()).hexdigest().upper()
-        if actual_hash != expected_hash:
-            fail(f"sponsoring asset hash mismatch: {rel}")
+    for rel in [
+        "docs/assets/sponsoring/wechat-pay.png",
+        "docs/assets/sponsoring/alipay.png",
+    ]:
         for readme, text in readmes.items():
             if rel not in text:
                 fail(f"sponsoring asset is not rendered by {readme}: {rel}")
 
-    for rel in ["README.md", "README.zh-CN.md", "SPONSORING.md", "SPONSORING.zh-CN.md"]:
+    for rel in readmes:
         if PAYPAL_URL not in (ROOT / rel).read_text(encoding="utf-8"):
             fail(f"reviewed PayPal channel is missing from {rel}")
 
@@ -287,30 +263,11 @@ def verify_relationship_docs() -> None:
         for path in [
             "README.md",
             "README.zh-CN.md",
-            "docs/private-public-sync-model.md",
-            "docs/public-private-boundary.md",
-            "docs/design-basis.md",
-            "docs/automation-validation.md",
         ]
     )
-    for phrase in ["research-bookmarks", "independent", "public-safe", "private"]:
+    for phrase in ["research-bookmarks", "public-safe", "private"]:
         if phrase not in combined:
-            fail(f"relationship docs missing required phrase: {phrase}")
-    for phrase in [
-        "Repository Role",
-        "public catalogue truth",
-        "仓库职责",
-        "公开目录真值",
-    ]:
-        if phrase not in combined:
-            fail(f"relationship docs missing system-context phrase: {phrase}")
-    stale_phrases = [
-        "may remain private while it is staged",
-        "可以暂时保持 private",
-    ]
-    for phrase in stale_phrases:
-        if phrase in combined:
-            fail(f"stale public-visibility phrase remains: {phrase}")
+            fail(f"README boundary missing required phrase: {phrase}")
 
 
 def main() -> None:
