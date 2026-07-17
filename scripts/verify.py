@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import importlib.util
 from pathlib import Path
@@ -19,6 +20,8 @@ REQUIRED_FILES = [
     "SPONSORING.zh-CN.md",
     "SUPPORT.md",
     "SUPPORT.zh-CN.md",
+    "docs/assets/sponsoring/wechat-pay.png",
+    "docs/assets/sponsoring/alipay.png",
     ".github/CODEOWNERS",
     ".github/FUNDING.yml",
     ".github/PULL_REQUEST_TEMPLATE.md",
@@ -79,6 +82,12 @@ OFFICIAL_SOURCE_TYPES = {
     "official_product_site", "official_documentation", "canonical_repository",
     "primary_institutional_source", "standards_body",
 }
+
+SPONSORING_ASSETS = {
+    "docs/assets/sponsoring/wechat-pay.png": "D8C213F1539CAD6C9FD23099736AECD06C722129AF24F77FE9F26563BBB9A05E",
+    "docs/assets/sponsoring/alipay.png": "491EE27D52797818F1CCA756560BC239CF6150FE3327B0FD31728F7CE53327CD",
+}
+PAYPAL_URL = "https://www.paypal.com/ncp/payment/LNTF8KXGJXMZY"
 
 
 def fail(message: str) -> None:
@@ -254,6 +263,24 @@ def verify_language_links() -> None:
         fail("README.zh-CN.md language switch is missing or inconsistent")
 
 
+def verify_sponsoring_surface() -> None:
+    readmes = {
+        "README.md": (ROOT / "README.md").read_text(encoding="utf-8"),
+        "README.zh-CN.md": (ROOT / "README.zh-CN.md").read_text(encoding="utf-8"),
+    }
+    for rel, expected_hash in SPONSORING_ASSETS.items():
+        actual_hash = hashlib.sha256((ROOT / rel).read_bytes()).hexdigest().upper()
+        if actual_hash != expected_hash:
+            fail(f"sponsoring asset hash mismatch: {rel}")
+        for readme, text in readmes.items():
+            if rel not in text:
+                fail(f"sponsoring asset is not rendered by {readme}: {rel}")
+
+    for rel in ["README.md", "README.zh-CN.md", "SPONSORING.md", "SPONSORING.zh-CN.md"]:
+        if PAYPAL_URL not in (ROOT / rel).read_text(encoding="utf-8"):
+            fail(f"reviewed PayPal channel is missing from {rel}")
+
+
 def verify_relationship_docs() -> None:
     combined = "\n".join(
         (ROOT / path).read_text(encoding="utf-8")
@@ -294,6 +321,7 @@ def main() -> None:
     verify_no_raw_browser_exports()
     verify_generated_bookmarks()
     verify_language_links()
+    verify_sponsoring_surface()
     verify_relationship_docs()
     print("research-bookmarks-public verification passed")
 

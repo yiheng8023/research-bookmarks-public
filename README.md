@@ -90,3 +90,30 @@ content are prohibited.
 - Voluntary sponsorship is described in [Sponsoring](SPONSORING.md). It does
   not purchase review priority, source admission, release authority, or
   influence over catalogue decisions.
+
+## Sponsor
+
+If this public bookmark catalogue is useful to you and you would like to
+support its continued maintenance, documentation, testing, and community work,
+voluntary sponsorships of any amount are sincerely appreciated. Sponsorship is
+optional and does not purchase support priority, source admission, features,
+release decisions, or technical influence.
+
+- For CNY sponsorships, scan the WeChat Pay or Alipay code below.
+- For cross-border sponsorships or other supported currencies, use the
+  [PayPal payment link](https://www.paypal.com/ncp/payment/LNTF8KXGJXMZY).
+  Available currencies, payment methods, conversion, and fees are determined
+  by the PayPal checkout page and may vary by country or region.
+
+Please verify the displayed recipient before confirming a payment. Thank you
+for supporting the project.
+
+<table>
+  <tr>
+    <td align="center"><strong>WeChat Pay (CNY)</strong><br><img src="docs/assets/sponsoring/wechat-pay.png" alt="WeChat Pay sponsorship QR code" width="280"></td>
+    <td align="center"><strong>Alipay (CNY)</strong><br><img src="docs/assets/sponsoring/alipay.png" alt="Alipay sponsorship QR code" width="280"></td>
+  </tr>
+</table>
+
+See [Sponsoring](SPONSORING.md) for the complete voluntary-sponsorship and
+governance boundary.
