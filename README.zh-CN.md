@@ -77,3 +77,25 @@ python -B scripts/simulate_user_flow.py
 - 参与社区须遵守[行为准则](CODE_OF_CONDUCT.md)。
 - 自愿赞助渠道及边界见[赞助说明](SPONSORING.zh-CN.md)；赞助不购买审查优先级、
   来源准入、发布权限或对目录决策的影响力。
+
+## 自愿赞助
+
+如果这个公开书签目录对你有帮助，并且你愿意支持项目的持续维护、文档、测试与社区
+工作，诚挚感谢任意金额的自愿赞助。赞助完全自愿，不购买支持优先级、来源准入、功能、
+发布决策或技术影响力。
+
+- 人民币赞助可以扫描下方微信支付或支付宝收款码。
+- 跨境赞助或其他受支持币种可以使用
+  [PayPal 付款链接](https://www.paypal.com/ncp/payment/LNTF8KXGJXMZY)。实际可用币种、
+  付款方式、换汇与手续费以 PayPal 结算页为准，并可能因国家或地区而异。
+
+付款前请核对结算页面显示的收款方。感谢你对项目的支持。
+
+<table>
+  <tr>
+    <td align="center"><strong>微信支付（人民币）</strong><br><img src="docs/assets/sponsoring/wechat-pay.png" alt="微信支付自愿赞助收款码" width="280"></td>
+    <td align="center"><strong>支付宝（人民币）</strong><br><img src="docs/assets/sponsoring/alipay.png" alt="支付宝自愿赞助收款码" width="280"></td>
+  </tr>
+</table>
+
+完整的自愿赞助与治理边界见[赞助说明](SPONSORING.zh-CN.md)。
