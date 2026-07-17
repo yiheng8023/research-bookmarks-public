@@ -79,3 +79,14 @@ admission basis; official/canonical and reviewed secondary references remain
 separate source types. Raw browser exports, private folder structure, local URLs, account or
 session data, personal preferences, low-trust fallbacks, and credential-like
 content are prohibited.
+
+## Community and Sustainability
+
+- Read [Contributing](CONTRIBUTING.md) before proposing source, taxonomy, or
+  tooling changes.
+- Use [Support](SUPPORT.md) to choose the appropriate public channel without
+  disclosing private bookmark or account data.
+- Participation is governed by the [Code of Conduct](CODE_OF_CONDUCT.md).
+- Voluntary sponsorship is described in [Sponsoring](SPONSORING.md). It does
+  not purchase review priority, source admission, release authority, or
+  influence over catalogue decisions.
