@@ -45,6 +45,26 @@ LOCAL_URL_PREFIXES = (
     "https://192.168.",
 )
 
+ALLOWED_SOURCE_TYPES = {
+    "official_product_site",
+    "official_documentation",
+    "canonical_repository",
+    "primary_institutional_source",
+    "standards_body",
+    "public_knowledge_resource",
+    "community_reference",
+    "secondary_reference",
+}
+OFFICIAL_SOURCE_TYPES = {
+    "official_product_site",
+    "official_documentation",
+    "canonical_repository",
+    "primary_institutional_source",
+    "standards_body",
+}
+ALLOWED_OWNERSHIP_STATUS = {"needs_review", "brand_verified", "legal_entity_verified"}
+ALLOWED_HEALTH_STATUS = {"reachable", "automation_limited", "needs_follow_up", "not_checked"}
+
 
 def load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -65,7 +85,12 @@ def taxonomy_map(taxonomy: dict) -> dict[str, dict]:
 
 
 def validate_source(source: dict, categories: dict[str, dict]) -> None:
-    for key in ("id", "title", "url", "category", "source_type", "public_safe", "official_or_canonical"):
+    for key in (
+        "id", "title", "url", "canonical_url", "canonical_host", "category", "subdomain",
+        "product", "entry_role", "market_scope", "ownership", "review_status",
+        "source_type", "admission_basis", "public_safe", "official_or_canonical",
+        "last_checked_at", "url_health", "evidence_links",
+    ):
         if key not in source:
             raise ValueError(f"source missing {key}: {source!r}")
     if source["category"] not in categories:
@@ -75,10 +100,26 @@ def validate_source(source: dict, categories: dict[str, dict]) -> None:
         raise ValueError(f"public bookmark URL must be https: {source['id']}")
     if source["url"].lower().startswith(LOCAL_URL_PREFIXES):
         raise ValueError(f"local/private URL leaked: {source['id']}")
+    if source["canonical_url"] != source["url"]:
+        raise ValueError(f"url and canonical_url must match in public truth: {source['id']}")
+    if source["canonical_host"] != parsed.netloc.lower():
+        raise ValueError(f"canonical_host does not match URL: {source['id']}")
     if source["public_safe"] is not True:
         raise ValueError(f"source must be public_safe=true: {source['id']}")
-    if source["official_or_canonical"] is not True:
-        raise ValueError(f"source must be official_or_canonical=true: {source['id']}")
+    if source["source_type"] not in ALLOWED_SOURCE_TYPES:
+        raise ValueError(f"unsupported source_type for {source['id']}: {source['source_type']}")
+    expected_official = source["source_type"] in OFFICIAL_SOURCE_TYPES
+    if source["official_or_canonical"] is not expected_official:
+        raise ValueError(f"official_or_canonical conflicts with source_type: {source['id']}")
+    ownership = source["ownership"]
+    if ownership.get("status") not in ALLOWED_OWNERSHIP_STATUS:
+        raise ValueError(f"invalid ownership status: {source['id']}")
+    if ownership.get("status") != "needs_review" and not ownership.get("evidence_links"):
+        raise ValueError(f"verified ownership lacks evidence: {source['id']}")
+    if source["url_health"].get("status") not in ALLOWED_HEALTH_STATUS:
+        raise ValueError(f"invalid url health status: {source['id']}")
+    if not isinstance(source["evidence_links"], list):
+        raise ValueError(f"evidence_links must be a list: {source['id']}")
     blob = " ".join(str(source.get(key, "")) for key in ("id", "title", "url", "source_type")).lower()
     for pattern in FORBIDDEN_PATTERNS:
         if pattern.lower() in blob:
@@ -86,8 +127,8 @@ def validate_source(source: dict, categories: dict[str, dict]) -> None:
 
 
 def validate_sources(data: dict, taxonomy: dict) -> list[dict]:
-    if data.get("schema_version") != 1:
-        raise ValueError("public sources schema_version must be 1")
+    if data.get("schema_version") != 2:
+        raise ValueError("public sources schema_version must be 2")
     categories = taxonomy_map(taxonomy)
     seen_ids: set[str] = set()
     seen_urls: set[str] = set()
@@ -132,7 +173,7 @@ def render_bookmarks(taxonomy: dict, sources: list[dict]) -> str:
         lines.append("        <DL><p>")
         by_type: dict[str, list[dict]] = defaultdict(list)
         for source in bucket:
-            by_type[source["source_type"]].append(source)
+            by_type[source["subdomain"]].append(source)
         for source_type in sorted(by_type):
             lines.append(f"            <DT><H3>{html.escape(source_type)}</H3>")
             lines.append("            <DL><p>")
@@ -178,4 +219,3 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

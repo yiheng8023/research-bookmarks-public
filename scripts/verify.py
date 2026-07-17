@@ -25,6 +25,7 @@ REQUIRED_FILES = [
     "docs/design-basis.md",
     "docs/projection-closeout.md",
     "docs/automation-validation.md",
+    "docs/catalog-audit-2026-07-17.md",
     "docs/source-policy.md",
     "exports/README.md",
     "exports/research-engineering-bookmarks-public.html",
@@ -58,6 +59,15 @@ FORBIDDEN_PATTERNS = [
     "逆向",
 ]
 LOCAL_URL_PREFIXES = ("http://127.", "http://localhost", "http://192.168.", "https://127.", "https://localhost", "https://192.168.")
+ALLOWED_SOURCE_TYPES = {
+    "official_product_site", "official_documentation", "canonical_repository",
+    "primary_institutional_source", "standards_body", "public_knowledge_resource",
+    "community_reference", "secondary_reference",
+}
+OFFICIAL_SOURCE_TYPES = {
+    "official_product_site", "official_documentation", "canonical_repository",
+    "primary_institutional_source", "standards_body",
+}
 
 
 def fail(message: str) -> None:
@@ -98,15 +108,20 @@ def verify_taxonomy() -> None:
 def verify_sources() -> None:
     categories = {item["id"] for item in load_json("data/taxonomy.json")["taxonomy"]}
     data = load_json("data/public-sources.json")
-    if data.get("schema_version") != 1:
-        fail("public sources schema_version must be 1")
+    if data.get("schema_version") != 2:
+        fail("public sources schema_version must be 2")
     seen = set()
     seen_urls = set()
     sources = data.get("sources", [])
     if len(sources) < 100:
         fail("public sources catalog is too thin to be useful")
     for source in data.get("sources", []):
-        for key in ("id", "title", "url", "category", "source_type", "public_safe", "official_or_canonical"):
+        for key in (
+            "id", "title", "url", "canonical_url", "canonical_host", "category", "subdomain",
+            "product", "entry_role", "market_scope", "ownership", "review_status",
+            "source_type", "admission_basis", "public_safe", "official_or_canonical",
+            "last_checked_at", "url_health", "evidence_links",
+        ):
             if key not in source:
                 fail(f"source missing {key}")
         if source["id"] in seen:
@@ -122,8 +137,23 @@ def verify_sources() -> None:
             fail(f"source URL must be https: {source['id']}")
         if source["public_safe"] is not True:
             fail(f"public source must be public_safe=true: {source['id']}")
-        if source["official_or_canonical"] is not True:
-            fail(f"public source must be official_or_canonical=true: {source['id']}")
+        if source["canonical_url"] != source["url"] or source["canonical_host"] != parsed.netloc.lower():
+            fail(f"canonical URL/host mismatch: {source['id']}")
+        if source["source_type"] not in ALLOWED_SOURCE_TYPES:
+            fail(f"invalid source_type: {source['id']}")
+        if source["official_or_canonical"] is not (source["source_type"] in OFFICIAL_SOURCE_TYPES):
+            fail(f"official_or_canonical conflicts with source_type: {source['id']}")
+        ownership = source["ownership"]
+        if ownership.get("status") not in {"needs_review", "brand_verified", "legal_entity_verified"}:
+            fail(f"invalid ownership status: {source['id']}")
+        if ownership.get("status") != "needs_review" and not ownership.get("evidence_links"):
+            fail(f"verified ownership lacks evidence: {source['id']}")
+        if source["url_health"].get("status") not in {"reachable", "automation_limited", "needs_follow_up", "not_checked"}:
+            fail(f"invalid URL health status: {source['id']}")
+        if source["category"] == "00_workspace_common_entrypoints":
+            fail(f"workspace is a private projection view, not public resource ownership: {source['id']}")
+        if any(token in source["title"] for token in ["中国站", "国际站", "国内入口", "国际入口", "海外"]):
+            fail(f"region label must be modeled as market_scope, not title text: {source['id']}")
         blob = " ".join(str(source.get(key, "")) for key in ("id", "title", "url", "source_type")).lower()
         for pattern in FORBIDDEN_PATTERNS:
             if pattern.lower() in blob:
@@ -148,6 +178,17 @@ def verify_projection_report() -> None:
         fail("projection report catalog authority is wrong")
     if not report["boundary"]["dependency_mode"].startswith("independent"):
         fail("projection report must declare independent dependency mode")
+    if report["audit"]["ownership_pending"] != sum(
+        source["ownership"]["status"] == "needs_review" for source in sources_data["sources"]
+    ):
+        fail("projection report ownership-pending count is wrong")
+    for category in [
+        "09_philosophy_language_literature_humanities",
+        "11_art_design_architecture_media_culture",
+        "14_governance_institutions_public_policy",
+    ]:
+        if report["category_counts"].get(category, 0) == 0:
+            fail(f"corrected taxonomy category is empty: {category}")
 
 
 def verify_no_raw_browser_exports() -> None:

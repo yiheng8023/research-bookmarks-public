@@ -1,7 +1,7 @@
 # Bookmark Projection Closeout
 
-This repository is not a hand-maintained bookmark dump. It is the public-safe
-projection of a private bookmark baseline.
+This repository is not a hand-maintained bookmark dump. It independently owns
+the public-safe catalogue; the private baseline is historical lineage only.
 
 ## Source Baseline
 
@@ -27,15 +27,16 @@ declassification review.
 This repository publishes:
 
 - `data/taxonomy.json` — public-safe top-level resource taxonomy;
-- `data/public-sources.json` — filtered official/canonical public sources;
+- `data/public-sources.json` — reviewed public-safe sources with explicit
+  admission, ownership-review, and URL-health fields;
 - `data/projection-report.json` — aggregate projection evidence;
 - `exports/research-engineering-bookmarks-public.html` — generated browser-importable HTML.
 
 Current public projection:
 
 ```text
-389 private entries
--> 328 public-safe sources
+389-entry historical private snapshot
+-> independent 334-source public catalogue
 -> generated browser-importable HTML
 -> verification + user-flow simulation
 ```

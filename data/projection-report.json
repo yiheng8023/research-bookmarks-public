@@ -1,27 +1,37 @@
 {
+  "audit": {
+    "canonical_url_updates": 3,
+    "new_public_candidates_admitted": 8,
+    "ownership_pending": 307,
+    "removed_account_adjacent_entry": 1,
+    "removed_sourceforge": 1,
+    "reviewed_at": "2026-07-17"
+  },
   "boundary": {
     "catalog_authority": "data/public-sources.json",
     "catalog_repository": "research-bookmarks-public",
     "dependency_mode": "independent; no live private sync or external control plane required",
     "private_candidate_source": "research-bookmarks (optional reviewed candidates only)",
-    "public_rule": "Only public-safe official or canonical sources are projected here."
+    "public_rule": "Only reviewed public-safe sources with an explicit admission basis are projected here; official and secondary source types remain distinct."
   },
   "category_counts": {
-    "00_workspace_common_entrypoints": 1,
-    "01_artificial_intelligence_computational_intelligence": 42,
-    "02_computer_science_software_engineering_information_systems": 35,
+    "01_artificial_intelligence_computational_intelligence": 46,
+    "02_computer_science_software_engineering_information_systems": 36,
     "03_data_graph_models_knowledge_organization": 21,
-    "04_mathematics_natural_sciences_foundational_research": 19,
-    "05_engineering_technology_hardware_industrial_systems": 25,
-    "06_medicine_health_life_sciences": 14,
-    "07_agriculture_environment_earth_systems": 7,
-    "08_history_geography_civilization_studies": 15,
+    "04_mathematics_natural_sciences_foundational_research": 17,
+    "05_engineering_technology_hardware_industrial_systems": 24,
+    "06_medicine_health_life_sciences": 15,
+    "07_agriculture_environment_earth_systems": 8,
+    "08_history_geography_civilization_studies": 12,
+    "09_philosophy_language_literature_humanities": 12,
     "10_social_sciences_economics_organization_studies": 13,
-    "12_education_language_learning_lifelong_development": 16,
-    "13_law_standards_public_services_compliance": 14,
-    "15_enterprises_products_industries_technology_ecosystems": 27,
-    "16_media_sports_entertainment_life_resources": 29,
-    "17_methodology_cognition_research_tools": 50
+    "11_art_design_architecture_media_culture": 13,
+    "12_education_language_learning_lifelong_development": 15,
+    "13_law_standards_public_services_compliance": 15,
+    "14_governance_institutions_public_policy": 10,
+    "15_enterprises_products_industries_technology_ecosystems": 30,
+    "16_media_sports_entertainment_life_resources": 30,
+    "17_methodology_cognition_research_tools": 17
   },
   "excluded_by_rule": {
     "account_or_local_host": 4,
@@ -35,30 +45,49 @@
     "This repository is not a live mirror of the current private bookmark overlay.",
     "Folder counts are export-parser counts and may differ from private browser folder-heading counts."
   ],
+  "ownership_status_counts": {
+    "brand_verified": 20,
+    "legal_entity_verified": 7,
+    "needs_review": 307
+  },
   "public_projection": {
     "html_export": "exports/research-engineering-bookmarks-public.html",
-    "html_folders": 44,
-    "html_links": 328,
-    "public_sources": 328,
+    "html_folders": 97,
+    "html_links": 334,
+    "public_sources": 334,
     "taxonomy_nodes": 18
+  },
+  "review_status_counts": {
+    "evidence_reviewed_2026_07_17": 27,
+    "legacy_public_review_ownership_pending": 307
   },
   "schema_version": 1,
   "source_baseline": {
     "lineage": {
+      "full_catalog_audit_at": "2026-07-17",
       "initial_imported_at": "2026-06-26",
       "initial_version": "v1.2-final",
       "private_repository": "research-bookmarks",
       "projection_mode": "historical public-safe projection, not live private overlay sync"
     },
     "name": "private_bookmark_baseline_v1.2_final_public_safe_projection",
-    "selection_policy": "public_safe_official_or_canonical_projection",
+    "selection_policy": "reviewed_public_safe_sources_with_explicit_admission_basis",
     "source_entries": 389
   },
   "source_type_counts": {
-    "canonical_repository_or_platform": 9,
-    "learning_or_institutional": 6,
-    "official_docs": 10,
-    "official_or_canonical_site": 298,
-    "standards_body": 5
+    "canonical_repository": 9,
+    "community_reference": 1,
+    "official_documentation": 10,
+    "official_product_site": 27,
+    "primary_institutional_source": 38,
+    "public_knowledge_resource": 240,
+    "secondary_reference": 3,
+    "standards_body": 6
+  },
+  "url_health_counts": {
+    "automation_limited": 50,
+    "needs_follow_up": 17,
+    "not_checked": 8,
+    "reachable": 259
   }
 }

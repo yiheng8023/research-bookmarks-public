@@ -27,7 +27,7 @@ exports/research-engineering-bookmarks-public.html
 data/projection-report.json               derived evidence
 ```
 
-The current 328-source catalogue has historical lineage from a reviewed
+The current 334-source catalogue has historical lineage from a reviewed
 private 389-entry snapshot dated 2026-06-26. That lineage does not create a
 live dependency or synchronization contract. Later private records are absent
 until individually reviewed and admitted here.
@@ -41,7 +41,9 @@ inherits private source authority by path.
 
 ## What This Repository Provides
 
-- `data/public-sources.json`: reviewed official or canonical public sources.
+- `data/public-sources.json`: reviewed public-safe sources with canonical host,
+  product, entry role, market scope, ownership status, evidence, and URL-health
+  fields. Unknown legal ownership remains explicit as `needs_review`.
 - `data/taxonomy.json`: broad public resource taxonomy.
 - `exports/research-engineering-bookmarks-public.html`: deterministic Netscape
   bookmark artifact.
@@ -49,6 +51,9 @@ inherits private source authority by path.
 - local verification and user-flow simulation.
 
 ## Verification
+
+The current full-catalog remediation and remaining ownership-evidence boundary
+are recorded in `docs/catalog-audit-2026-07-17.md`.
 
 Regenerate:
 
@@ -69,7 +74,8 @@ convenience, but it is not repository truth or a required runtime dependency.
 
 ## Safety Boundary
 
-Public output must contain only reviewed public-safe official or canonical
-sources. Raw browser exports, private folder structure, local URLs, account or
+Public output must contain only reviewed public-safe sources with an explicit
+admission basis; official/canonical and reviewed secondary references remain
+separate source types. Raw browser exports, private folder structure, local URLs, account or
 session data, personal preferences, low-trust fallbacks, and credential-like
 content are prohibited.

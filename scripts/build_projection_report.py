@@ -39,6 +39,9 @@ def build_report() -> dict:
 
     category_counts = Counter(source["category"] for source in sources)
     source_type_counts = Counter(source["source_type"] for source in sources)
+    ownership_counts = Counter(source["ownership"]["status"] for source in sources)
+    review_counts = Counter(source["review_status"] for source in sources)
+    health_counts = Counter(source["url_health"]["status"] for source in sources)
 
     return {
         "schema_version": 1,
@@ -58,12 +61,23 @@ def build_report() -> dict:
         "excluded_by_rule": sources_data["counts"]["excluded_by_rule"],
         "category_counts": dict(sorted(category_counts.items())),
         "source_type_counts": dict(sorted(source_type_counts.items())),
+        "ownership_status_counts": dict(sorted(ownership_counts.items())),
+        "review_status_counts": dict(sorted(review_counts.items())),
+        "url_health_counts": dict(sorted(health_counts.items())),
+        "audit": {
+            "reviewed_at": sources_data["audit"]["reviewed_at"],
+            "ownership_pending": ownership_counts.get("needs_review", 0),
+            "removed_sourceforge": sources_data["audit"]["removed_sourceforge"],
+            "removed_account_adjacent_entry": sources_data["audit"]["removed_account_adjacent_entry"],
+            "canonical_url_updates": sources_data["audit"]["canonical_url_updates"],
+            "new_public_candidates_admitted": sources_data["audit"]["new_public_candidates_admitted"]
+        },
         "boundary": {
             "catalog_repository": "research-bookmarks-public",
             "catalog_authority": "data/public-sources.json",
             "private_candidate_source": "research-bookmarks (optional reviewed candidates only)",
             "dependency_mode": "independent; no live private sync or external control plane required",
-            "public_rule": "Only public-safe official or canonical sources are projected here."
+            "public_rule": "Only reviewed public-safe sources with an explicit admission basis are projected here; official and secondary source types remain distinct."
         },
         "notes": [
             "The public projection is generated from structured data, not hand-edited HTML.",
