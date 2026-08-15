@@ -15,7 +15,7 @@
     "public_rule": "Only reviewed public-safe sources with an explicit admission basis are projected here; official and secondary source types remain distinct."
   },
   "category_counts": {
-    "01_artificial_intelligence_computational_intelligence": 46,
+    "01_artificial_intelligence_computational_intelligence": 47,
     "02_computer_science_software_engineering_information_systems": 36,
     "03_data_graph_models_knowledge_organization": 21,
     "04_mathematics_natural_sciences_foundational_research": 17,
@@ -46,19 +46,20 @@
     "Folder counts are export-parser counts and may differ from private browser folder-heading counts."
   ],
   "ownership_status_counts": {
-    "brand_verified": 20,
+    "brand_verified": 21,
     "legal_entity_verified": 7,
     "needs_review": 307
   },
   "public_projection": {
     "html_export": "exports/research-engineering-bookmarks-public.html",
     "html_folders": 97,
-    "html_links": 334,
-    "public_sources": 334,
+    "html_links": 335,
+    "public_sources": 335,
     "taxonomy_nodes": 18
   },
   "review_status_counts": {
     "evidence_reviewed_2026_07_17": 27,
+    "evidence_reviewed_2026_08_15": 1,
     "legacy_public_review_ownership_pending": 307
   },
   "schema_version": 1,
@@ -78,7 +79,7 @@
     "canonical_repository": 9,
     "community_reference": 1,
     "official_documentation": 10,
-    "official_product_site": 27,
+    "official_product_site": 28,
     "primary_institutional_source": 38,
     "public_knowledge_resource": 240,
     "secondary_reference": 3,
@@ -87,7 +88,7 @@
   "url_health_counts": {
     "automation_limited": 50,
     "needs_follow_up": 17,
-    "not_checked": 8,
+    "not_checked": 9,
     "reachable": 259
   }
 }

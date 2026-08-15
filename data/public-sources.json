@@ -11,7 +11,7 @@
   "selection_policy": "reviewed_public_safe_sources_with_explicit_admission_basis",
   "counts": {
     "source_entries": 389,
-    "public_sources": 334,
+    "public_sources": 335,
     "excluded_by_rule": {
       "account_or_local_host": 4,
       "private_or_low_trust_folder": 3,
@@ -1630,6 +1630,45 @@
         "http_status": 200,
         "checked_at": "2026-07-17T06:27:37.1002868Z",
         "method": "unauthenticated_head",
+        "final_url": null
+      }
+    },
+    {
+      "id": "www-workbuddy-cn-workbuddy",
+      "title": "WorkBuddy",
+      "product": "WorkBuddy",
+      "url": "https://www.workbuddy.cn/",
+      "canonical_url": "https://www.workbuddy.cn/",
+      "previous_urls": [],
+      "canonical_host": "www.workbuddy.cn",
+      "category": "01_artificial_intelligence_computational_intelligence",
+      "subdomain": "通用智能体与自动化",
+      "entry_role": "general_agent",
+      "market_scope": "mainland_china",
+      "ownership": {
+        "operator": "Tencent",
+        "legal_entity": null,
+        "status": "brand_verified",
+        "evidence_links": [
+          "https://www.workbuddy.cn/",
+          "https://www.tencent.com/zh-cn/articles/2202350.html"
+        ]
+      },
+      "review_status": "evidence_reviewed_2026_08_15",
+      "source_type": "official_product_site",
+      "admission_basis": "official_source",
+      "public_safe": true,
+      "official_or_canonical": true,
+      "evidence_links": [
+        "https://www.workbuddy.cn/",
+        "https://www.tencent.com/zh-cn/articles/2202350.html"
+      ],
+      "last_checked_at": null,
+      "url_health": {
+        "status": "not_checked",
+        "http_status": null,
+        "checked_at": null,
+        "method": null,
         "final_url": null
       }
     },

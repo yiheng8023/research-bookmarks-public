@@ -12,7 +12,7 @@ artifact.
 
 ## Current snapshot
 
-- 334 public-safe links across 97 bookmark folders.
+- 335 public-safe links across 97 bookmark folders.
 - The latest naming, classification, ownership, and redundancy review is in
   [the catalogue audit](docs/catalog-audit-2026-07-17.md).
 
